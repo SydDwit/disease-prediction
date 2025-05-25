@@ -1,0 +1,5565 @@
+{
+    "abdominal aortic aneurysm": {
+        "count": 138,
+        "mapped_specialties": [
+            "Vascular Surgeon",
+            "Cardiologist"
+        ]
+    },
+    "abdominal hernia": {
+        "count": 407,
+        "mapped_specialties": [
+            "General Surgeon",
+            "Internal Medicine"
+        ]
+    },
+    "abscess of nose": {
+        "count": 290,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "abscess of the lung": {
+        "count": 19,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Infectious Disease"
+        ]
+    },
+    "abscess of the pharynx": {
+        "count": 341,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "acanthosis nigricans": {
+        "count": 30,
+        "mapped_specialties": [
+            "Dermatologist",
+            "Endocrinologist"
+        ]
+    },
+    "acariasis": {
+        "count": 36,
+        "mapped_specialties": [
+            "Dermatologist",
+            "Infectious Disease"
+        ]
+    },
+    "achalasia": {
+        "count": 84,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "General Surgeon"
+        ]
+    },
+    "acne": {
+        "count": 496,
+        "mapped_specialties": [
+            "Dermatologist"
+        ]
+    },
+    "actinic keratosis": {
+        "count": 909,
+        "mapped_specialties": [
+            "Dermatologist"
+        ]
+    },
+    "acute bronchiolitis": {
+        "count": 1204,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Pediatrician"
+        ]
+    },
+    "acute bronchitis": {
+        "count": 1213,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Internal Medicine"
+        ]
+    },
+    "acute bronchospasm": {
+        "count": 906,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Emergency Medicine"
+        ]
+    },
+    "acute fatty liver of pregnancy (aflp)": {
+        "count": 9,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Internal Medicine"
+        ]
+    },
+    "acute glaucoma": {
+        "count": 210,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Emergency Medicine"
+        ]
+    },
+    "acute kidney injury": {
+        "count": 908,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Critical Care"
+        ]
+    },
+    "acute otitis media": {
+        "count": 683,
+        "mapped_specialties": [
+            "ENT",
+            "Family Medicine"
+        ]
+    },
+    "acute pancreatitis": {
+        "count": 1207,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Internal Medicine"
+        ]
+    },
+    "acute respiratory distress syndrome (ards)": {
+        "count": 451,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Critical Care"
+        ]
+    },
+    "acute sinusitis": {
+        "count": 906,
+        "mapped_specialties": [
+            "ENT",
+            "Family Medicine"
+        ]
+    },
+    "acute stress reaction": {
+        "count": 910,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Psychologist"
+        ]
+    },
+    "adhesive capsulitis of the shoulder": {
+        "count": 73,
+        "mapped_specialties": [
+            "Orthopedist",
+            "Physical Medicine"
+        ]
+    },
+    "adjustment reaction": {
+        "count": 503,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Psychologist"
+        ]
+    },
+    "adrenal adenoma": {
+        "count": 35,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "adrenal cancer": {
+        "count": 3,
+        "mapped_specialties": [
+            "Endocrinologist",
+            "Oncologist"
+        ]
+    },
+    "alcohol abuse": {
+        "count": 510,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Addiction Medicine"
+        ]
+    },
+    "alcohol intoxication": {
+        "count": 351,
+        "mapped_specialties": [
+            "Emergency Medicine",
+            "Addiction Medicine"
+        ]
+    },
+    "alcohol withdrawal": {
+        "count": 665,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Addiction Medicine"
+        ]
+    },
+    "alcoholic liver disease": {
+        "count": 246,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "allergy": {
+        "count": 905,
+        "mapped_specialties": [
+            "Allergist",
+            "Immunologist"
+        ]
+    },
+    "allergy to animals": {
+        "count": 39,
+        "mapped_specialties": [
+            "Allergist",
+            "Immunologist"
+        ]
+    },
+    "alopecia": {
+        "count": 340,
+        "mapped_specialties": [
+            "Dermatologist"
+        ]
+    },
+    "alzheimer disease": {
+        "count": 336,
+        "mapped_specialties": [
+            "Neurologist",
+            "Geriatrician"
+        ]
+    },
+    "amblyopia": {
+        "count": 47,
+        "mapped_specialties": [
+            "Ophthalmologist"
+        ]
+    },
+    "amyloidosis": {
+        "count": 4,
+        "mapped_specialties": [
+            "Hematologist",
+            "Nephrologist"
+        ]
+    },
+    "amyotrophic lateral sclerosis (als)": {
+        "count": 60,
+        "mapped_specialties": [
+            "Neurologist"
+        ]
+    },
+    "anal fissure": {
+        "count": 226,
+        "mapped_specialties": [
+            "Colorectal Surgeon",
+            "General Surgeon"
+        ]
+    },
+    "anal fistula": {
+        "count": 20,
+        "mapped_specialties": [
+            "Colorectal Surgeon",
+            "General Surgeon"
+        ]
+    },
+    "anemia": {
+        "count": 331,
+        "mapped_specialties": [
+            "Hematologist",
+            "Internal Medicine"
+        ]
+    },
+    "anemia due to chronic kidney disease": {
+        "count": 50,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "anemia due to malignancy": {
+        "count": 12,
+        "mapped_specialties": [
+            "Hematologist",
+            "Oncologist"
+        ]
+    },
+    "anemia of chronic disease": {
+        "count": 40,
+        "mapped_specialties": [
+            "Hematologist",
+            "Internal Medicine"
+        ]
+    },
+    "angina": {
+        "count": 906,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "ankylosing spondylitis": {
+        "count": 606,
+        "mapped_specialties": [
+            "Rheumatologist",
+            "Orthopedist"
+        ]
+    },
+    "anxiety": {
+        "count": 1198,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Psychologist"
+        ]
+    },
+    "aortic valve disease": {
+        "count": 451,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "aphakia": {
+        "count": 9,
+        "mapped_specialties": [
+            "Ophthalmologist"
+        ]
+    },
+    "aphthous ulcer": {
+        "count": 244,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Internal Medicine"
+        ]
+    },
+    "aplastic anemia": {
+        "count": 70,
+        "mapped_specialties": [
+            "Hematologist"
+        ]
+    },
+    "appendicitis": {
+        "count": 903,
+        "mapped_specialties": [
+            "General Surgeon",
+            "Emergency Medicine"
+        ]
+    },
+    "arrhythmia": {
+        "count": 258,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Electrophysiologist"
+        ]
+    },
+    "arthritis of the hip": {
+        "count": 1210,
+        "mapped_specialties": [
+            "Orthopedist",
+            "Rheumatologist"
+        ]
+    },
+    "ascending cholangitis": {
+        "count": 72,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "General Surgeon"
+        ]
+    },
+    "asperger syndrome": {
+        "count": 338,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Neurologist"
+        ]
+    },
+    "aspergillosis": {
+        "count": 10,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Pulmonologist"
+        ]
+    },
+    "asthma": {
+        "count": 904,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Allergist",
+            "Internal Medicine"
+        ]
+    },
+    "astigmatism": {
+        "count": 321,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Optometrist"
+        ]
+    },
+    "atelectasis": {
+        "count": 99,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "athlete's foot": {
+        "count": 382,
+        "mapped_specialties": [
+            "Dermatologist",
+            "Family Medicine"
+        ]
+    },
+    "atonic bladder": {
+        "count": 71,
+        "mapped_specialties": [
+            "Urologist",
+            "Neurologist"
+        ]
+    },
+    "atrial fibrillation": {
+        "count": 68,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Electrophysiologist"
+        ]
+    },
+    "atrial flutter": {
+        "count": 240,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Electrophysiologist"
+        ]
+    },
+    "atrophic skin condition": {
+        "count": 438,
+        "mapped_specialties": [
+            "Dermatologist"
+        ]
+    },
+    "atrophic vaginitis": {
+        "count": 329,
+        "mapped_specialties": [
+            "Dermatologist"
+        ]
+    },
+    "atrophy of the corpus cavernosum": {
+        "count": 47,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "attention deficit hyperactivity disorder (adhd)": {
+        "count": 507,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "autism": {
+        "count": 452,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Developmental Pediatrician"
+        ]
+    },
+    "autonomic nervous system disorder": {
+        "count": 84,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "avascular necrosis": {
+        "count": 10,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Vascular Surgeon"
+        ]
+    },
+    "balanitis": {
+        "count": 454,
+        "mapped_specialties": [
+            "Urologist",
+            "Dermatologist"
+        ]
+    },
+    "bell palsy": {
+        "count": 685,
+        "mapped_specialties": [
+            "Neurologist",
+            "ENT"
+        ]
+    },
+    "benign kidney cyst": {
+        "count": 206,
+        "mapped_specialties": [
+            "Urologist",
+            "Nephrologist"
+        ]
+    },
+    "benign paroxysmal positional vertical (bppv)": {
+        "count": 443,
+        "mapped_specialties": [
+            "ENT",
+            "Neurologist"
+        ]
+    },
+    "benign prostatic hyperplasia (bph)": {
+        "count": 1206,
+        "mapped_specialties": [
+            "Urologist"
+        ]
+    },
+    "benign vaginal discharge (leukorrhea)": {
+        "count": 682,
+        "mapped_specialties": [
+            "Gynecologist"
+        ]
+    },
+    "bipolar disorder": {
+        "count": 663,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "birth trauma": {
+        "count": 11,
+        "mapped_specialties": [
+            "Medical Geneticist",
+            "Pediatrician"
+        ]
+    },
+    "bladder cancer": {
+        "count": 125,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "bladder disorder": {
+        "count": 454,
+        "mapped_specialties": [
+            "Urologist"
+        ]
+    },
+    "bladder obstruction": {
+        "count": 338,
+        "mapped_specialties": [
+            "Urologist"
+        ]
+    },
+    "blepharitis": {
+        "count": 906,
+        "mapped_specialties": [
+            "Ophthalmologist"
+        ]
+    },
+    "blepharospasm": {
+        "count": 6,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Neurologist"
+        ]
+    },
+    "bone cancer": {
+        "count": 83,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "bone disorder": {
+        "count": 255,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "bone spur of the calcaneous": {
+        "count": 31,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "brachial neuritis": {
+        "count": 907,
+        "mapped_specialties": [
+            "Neurologist",
+            "Physical Medicine"
+        ]
+    },
+    "brain cancer": {
+        "count": 227,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "breast cancer": {
+        "count": 6,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "breast cyst": {
+        "count": 22,
+        "mapped_specialties": [
+            "Oncologist",
+            "Breast Surgeon"
+        ]
+    },
+    "breast infection (mastitis)": {
+        "count": 501,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Family Medicine"
+        ]
+    },
+    "broken tooth": {
+        "count": 165,
+        "mapped_specialties": [
+            "Dentist",
+            "Oral Surgeon"
+        ]
+    },
+    "bunion": {
+        "count": 38,
+        "mapped_specialties": [
+            "Podiatrist",
+            "Orthopedist"
+        ]
+    },
+    "burn": {
+        "count": 57,
+        "mapped_specialties": [
+            "Burn Specialist",
+            "Plastic Surgeon"
+        ]
+    },
+    "bursitis": {
+        "count": 1208,
+        "mapped_specialties": [
+            "Orthopedist",
+            "Physical Medicine"
+        ]
+    },
+    "callus": {
+        "count": 513,
+        "mapped_specialties": [
+            "Podiatrist",
+            "Dermatologist"
+        ]
+    },
+    "carbon monoxide poisoning": {
+        "count": 88,
+        "mapped_specialties": [
+            "Emergency Medicine",
+            "Critical Care"
+        ]
+    },
+    "carcinoid syndrome": {
+        "count": 2,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "cardiac arrest": {
+        "count": 346,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Emergency Medicine"
+        ]
+    },
+    "cardiomyopathy": {
+        "count": 311,
+        "mapped_specialties": [
+            "Cardiologist"
+        ]
+    },
+    "carpal tunnel syndrome": {
+        "count": 896,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "cat scratch disease": {
+        "count": 3,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "cataract": {
+        "count": 607,
+        "mapped_specialties": [
+            "Ophthalmologist"
+        ]
+    },
+    "celiac disease": {
+        "count": 151,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Immunologist"
+        ]
+    },
+    "cellulitis or abscess of mouth": {
+        "count": 138,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "central atherosclerosis": {
+        "count": 18,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "central retinal artery or vein occlusion": {
+        "count": 69,
+        "mapped_specialties": [
+            "Ophthalmologist"
+        ]
+    },
+    "cerebral edema": {
+        "count": 104,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "cerebral palsy": {
+        "count": 139,
+        "mapped_specialties": [
+            "Neurologist",
+            "ENT"
+        ]
+    },
+    "cervical cancer": {
+        "count": 97,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "cervical disorder": {
+        "count": 43,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "cervicitis": {
+        "count": 384,
+        "mapped_specialties": [
+            "Gynecologist",
+            "Infectious Disease"
+        ]
+    },
+    "chalazion": {
+        "count": 678,
+        "mapped_specialties": [
+            "Ophthalmologist"
+        ]
+    },
+    "chickenpox": {
+        "count": 104,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Pediatrician"
+        ]
+    },
+    "chlamydia": {
+        "count": 165,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Gynecologist"
+        ]
+    },
+    "cholecystitis": {
+        "count": 1204,
+        "mapped_specialties": [
+            "General Surgeon",
+            "Gastroenterologist"
+        ]
+    },
+    "choledocholithiasis": {
+        "count": 441,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "General Surgeon"
+        ]
+    },
+    "cholesteatoma": {
+        "count": 31,
+        "mapped_specialties": [
+            "ENT",
+            "Otologist"
+        ]
+    },
+    "chondromalacia of the patella": {
+        "count": 53,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "chorioretinitis": {
+        "count": 76,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Infectious Disease"
+        ]
+    },
+    "chronic back pain": {
+        "count": 899,
+        "mapped_specialties": [
+            "Pain Management",
+            "Physical Medicine"
+        ]
+    },
+    "chronic constipation": {
+        "count": 913,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Internal Medicine"
+        ]
+    },
+    "chronic glaucoma": {
+        "count": 668,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Internal Medicine"
+        ]
+    },
+    "chronic inflammatory demyelinating polyneuropathy (cidp)": {
+        "count": 18,
+        "mapped_specialties": [
+            "Pain Management",
+            "Physical Medicine"
+        ]
+    },
+    "chronic kidney disease": {
+        "count": 10,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Internal Medicine"
+        ]
+    },
+    "chronic knee pain": {
+        "count": 150,
+        "mapped_specialties": [
+            "Pain Management",
+            "Physical Medicine"
+        ]
+    },
+    "chronic obstructive pulmonary disease (copd)": {
+        "count": 906,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "chronic otitis media": {
+        "count": 669,
+        "mapped_specialties": [
+            "ENT",
+            "Family Medicine"
+        ]
+    },
+    "chronic pain disorder": {
+        "count": 677,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "chronic pancreatitis": {
+        "count": 297,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Internal Medicine"
+        ]
+    },
+    "chronic rheumatic fever": {
+        "count": 169,
+        "mapped_specialties": [
+            "Pain Management",
+            "Physical Medicine"
+        ]
+    },
+    "chronic sinusitis": {
+        "count": 657,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Internal Medicine"
+        ]
+    },
+    "chronic ulcer": {
+        "count": 1,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Internal Medicine"
+        ]
+    },
+    "cirrhosis": {
+        "count": 331,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Hepatologist"
+        ]
+    },
+    "coagulation (bleeding) disorder": {
+        "count": 90,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "cold sore": {
+        "count": 192,
+        "mapped_specialties": [
+            "Dermatologist",
+            "Infectious Disease"
+        ]
+    },
+    "colonic polyp": {
+        "count": 339,
+        "mapped_specialties": [
+            "Colorectal Surgeon",
+            "Gastroenterologist"
+        ]
+    },
+    "colorectal cancer": {
+        "count": 15,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "common cold": {
+        "count": 905,
+        "mapped_specialties": [
+            "Family Medicine",
+            "ENT"
+        ]
+    },
+    "complex regional pain syndrome": {
+        "count": 1217,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "concussion": {
+        "count": 1191,
+        "mapped_specialties": [
+            "Neurologist",
+            "Sports Medicine"
+        ]
+    },
+    "conduct disorder": {
+        "count": 679,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "conductive hearing loss": {
+        "count": 598,
+        "mapped_specialties": [
+            "Audiologist",
+            "ENT"
+        ]
+    },
+    "congenital heart defect": {
+        "count": 36,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "congenital malformation syndrome": {
+        "count": 13,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "conjunctivitis": {
+        "count": 909,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Family Medicine"
+        ]
+    },
+    "conjunctivitis due to allergy": {
+        "count": 1215,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "conjunctivitis due to bacteria": {
+        "count": 154,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "conjunctivitis due to virus": {
+        "count": 681,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "connective tissue disorder": {
+        "count": 3,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "contact dermatitis": {
+        "count": 909,
+        "mapped_specialties": [
+            "Dermatologist",
+            "Allergist"
+        ]
+    },
+    "conversion disorder": {
+        "count": 20,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "cornea infection": {
+        "count": 903,
+        "mapped_specialties": [
+            "Urologist",
+            "Internal Medicine",
+            "Family Medicine"
+        ]
+    },
+    "corneal abrasion": {
+        "count": 500,
+        "mapped_specialties": [
+            "Ophthalmologist"
+        ]
+    },
+    "corneal disorder": {
+        "count": 676,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "coronary atherosclerosis": {
+        "count": 112,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "cranial nerve palsy": {
+        "count": 340,
+        "mapped_specialties": [
+            "Neurologist",
+            "ENT"
+        ]
+    },
+    "crohn disease": {
+        "count": 376,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "croup": {
+        "count": 904,
+        "mapped_specialties": [
+            "Pediatrician",
+            "ENT"
+        ]
+    },
+    "crushing injury": {
+        "count": 63,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Critical Care"
+        ]
+    },
+    "cryptococcosis": {
+        "count": 11,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "cryptorchidism": {
+        "count": 5,
+        "mapped_specialties": [
+            "Urologist",
+            "Pediatric Surgeon"
+        ]
+    },
+    "cushing syndrome": {
+        "count": 9,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "cyst of the eyelid": {
+        "count": 18,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "cystic fibrosis": {
+        "count": 15,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Pediatric Pulmonologist"
+        ]
+    },
+    "cysticercosis": {
+        "count": 36,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Neurologist"
+        ]
+    },
+    "cystitis": {
+        "count": 1219,
+        "mapped_specialties": [
+            "Urologist",
+            "Internal Medicine"
+        ]
+    },
+    "de quervain disease": {
+        "count": 92,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "decubitus ulcer": {
+        "count": 10,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Internal Medicine"
+        ]
+    },
+    "deep vein thrombosis (dvt)": {
+        "count": 240,
+        "mapped_specialties": [
+            "Vascular Surgeon",
+            "Hematologist"
+        ]
+    },
+    "degenerative disc disease": {
+        "count": 909,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "delirium": {
+        "count": 598,
+        "mapped_specialties": [
+            "Neurologist",
+            "Psychiatrist"
+        ]
+    },
+    "dementia": {
+        "count": 339,
+        "mapped_specialties": [
+            "Neurologist",
+            "Geriatrician"
+        ]
+    },
+    "dengue fever": {
+        "count": 3,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "dental caries": {
+        "count": 1185,
+        "mapped_specialties": [
+            "Dentist"
+        ]
+    },
+    "depression": {
+        "count": 912,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Psychologist"
+        ]
+    },
+    "dermatitis due to sun exposure": {
+        "count": 446,
+        "mapped_specialties": [
+            "Hematologist",
+            "Oncologist"
+        ]
+    },
+    "developmental disability": {
+        "count": 911,
+        "mapped_specialties": [
+            "Pediatrician",
+            "Developmental Pediatrician"
+        ]
+    },
+    "deviated nasal septum": {
+        "count": 607,
+        "mapped_specialties": [
+            "ENT",
+            "Plastic Surgeon"
+        ]
+    },
+    "diabetes": {
+        "count": 1,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "diabetes insipidus": {
+        "count": 12,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "diabetic ketoacidosis": {
+        "count": 673,
+        "mapped_specialties": [
+            "Endocrinologist",
+            "Emergency Medicine"
+        ]
+    },
+    "diabetic kidney disease": {
+        "count": 2,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "diabetic peripheral neuropathy": {
+        "count": 452,
+        "mapped_specialties": [
+            "Neurologist",
+            "Internal Medicine"
+        ]
+    },
+    "diabetic retinopathy": {
+        "count": 456,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Endocrinologist"
+        ]
+    },
+    "diaper rash": {
+        "count": 897,
+        "mapped_specialties": [
+            "Dermatologist",
+            "Allergist"
+        ]
+    },
+    "dislocation of the ankle": {
+        "count": 21,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "dislocation of the elbow": {
+        "count": 84,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "dislocation of the finger": {
+        "count": 18,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "dislocation of the foot": {
+        "count": 19,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "dislocation of the hip": {
+        "count": 6,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "dislocation of the knee": {
+        "count": 3,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "dislocation of the patella": {
+        "count": 3,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "dislocation of the shoulder": {
+        "count": 64,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "dislocation of the vertebra": {
+        "count": 38,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "dislocation of the wrist": {
+        "count": 45,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "dissociative disorder": {
+        "count": 91,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "diverticulitis": {
+        "count": 1214,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "General Surgeon"
+        ]
+    },
+    "diverticulosis": {
+        "count": 673,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Colorectal Surgeon"
+        ]
+    },
+    "down syndrome": {
+        "count": 127,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "drug abuse": {
+        "count": 603,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Addiction Medicine"
+        ]
+    },
+    "drug abuse (barbiturates)": {
+        "count": 62,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Addiction Medicine"
+        ]
+    },
+    "drug abuse (cocaine)": {
+        "count": 281,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Addiction Medicine"
+        ]
+    },
+    "drug abuse (methamphetamine)": {
+        "count": 330,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Addiction Medicine"
+        ]
+    },
+    "drug abuse (opioids)": {
+        "count": 604,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Addiction Medicine"
+        ]
+    },
+    "drug poisoning due to medication": {
+        "count": 208,
+        "mapped_specialties": [
+            "Hematologist",
+            "Oncologist"
+        ]
+    },
+    "drug reaction": {
+        "count": 909,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Psychologist"
+        ]
+    },
+    "drug withdrawal": {
+        "count": 255,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Addiction Medicine"
+        ]
+    },
+    "dry eye of unknown cause": {
+        "count": 861,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Family Medicine"
+        ]
+    },
+    "dumping syndrome": {
+        "count": 4,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "dyshidrosis": {
+        "count": 83,
+        "mapped_specialties": [
+            "Dermatologist",
+            "Allergist"
+        ]
+    },
+    "dysthymic disorder": {
+        "count": 499,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "ear drum damage": {
+        "count": 907,
+        "mapped_specialties": [
+            "ENT",
+            "Otologist"
+        ]
+    },
+    "ear wax impaction": {
+        "count": 678,
+        "mapped_specialties": [
+            "ENT",
+            "Otologist"
+        ]
+    },
+    "eating disorder": {
+        "count": 494,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Nutritionist"
+        ]
+    },
+    "ectopic pregnancy": {
+        "count": 341,
+        "mapped_specialties": [
+            "Obstetrician",
+            "Maternal-Fetal Medicine"
+        ]
+    },
+    "ectropion": {
+        "count": 38,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Oculoplastic Surgeon"
+        ]
+    },
+    "eczema": {
+        "count": 1207,
+        "mapped_specialties": [
+            "Dermatologist",
+            "Allergist"
+        ]
+    },
+    "edward syndrome": {
+        "count": 6,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "emphysema": {
+        "count": 31,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Internal Medicine"
+        ]
+    },
+    "empyema": {
+        "count": 6,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "encephalitis": {
+        "count": 94,
+        "mapped_specialties": [
+            "Neurologist",
+            "Infectious Disease"
+        ]
+    },
+    "endocarditis": {
+        "count": 83,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Cardiologist"
+        ]
+    },
+    "endometrial cancer": {
+        "count": 88,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "endometrial hyperplasia": {
+        "count": 49,
+        "mapped_specialties": [
+            "Urologist"
+        ]
+    },
+    "endometriosis": {
+        "count": 378,
+        "mapped_specialties": [
+            "Gynecologist",
+            "Reproductive Endocrinologist"
+        ]
+    },
+    "endophthalmitis": {
+        "count": 61,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Infectious Disease"
+        ]
+    },
+    "envenomation from spider or animal bite": {
+        "count": 455,
+        "mapped_specialties": [
+            "Emergency Medicine",
+            "Toxicologist"
+        ]
+    },
+    "ependymoma": {
+        "count": 19,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "epididymitis": {
+        "count": 511,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "epidural hemorrhage": {
+        "count": 10,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "epilepsy": {
+        "count": 75,
+        "mapped_specialties": [
+            "Neurologist"
+        ]
+    },
+    "erectile dysfunction": {
+        "count": 606,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "erythema multiforme": {
+        "count": 43,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "esophageal cancer": {
+        "count": 77,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "esophageal varices": {
+        "count": 3,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "esophagitis": {
+        "count": 1215,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "essential tremor": {
+        "count": 195,
+        "mapped_specialties": [
+            "Neurologist",
+            "Movement Disorder Specialist"
+        ]
+    },
+    "eustachian tube dysfunction (ear disorder)": {
+        "count": 909,
+        "mapped_specialties": [
+            "ENT"
+        ]
+    },
+    "extrapyramidal effect of drugs": {
+        "count": 83,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "eye alignment disorder": {
+        "count": 453,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "factitious disorder": {
+        "count": 13,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "female genitalia infection": {
+        "count": 197,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Family Medicine"
+        ]
+    },
+    "female infertility of unknown cause": {
+        "count": 28,
+        "mapped_specialties": [
+            "Reproductive Endocrinologist",
+            "Gynecologist"
+        ]
+    },
+    "fetal alcohol syndrome": {
+        "count": 7,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "fibroadenoma": {
+        "count": 97,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "fibrocystic breast disease": {
+        "count": 14,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "fibromyalgia": {
+        "count": 656,
+        "mapped_specialties": [
+            "Rheumatologist",
+            "Pain Management"
+        ]
+    },
+    "flat feet": {
+        "count": 33,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "floaters": {
+        "count": 24,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "flu": {
+        "count": 679,
+        "mapped_specialties": [
+            "Family Medicine",
+            "Infectious Disease"
+        ]
+    },
+    "fluid overload": {
+        "count": 327,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "folate deficiency": {
+        "count": 44,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "food allergy": {
+        "count": 454,
+        "mapped_specialties": [
+            "Allergist",
+            "Immunologist"
+        ]
+    },
+    "foreign body in the ear": {
+        "count": 25,
+        "mapped_specialties": [
+            "ENT",
+            "Otologist"
+        ]
+    },
+    "foreign body in the eye": {
+        "count": 281,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Family Medicine"
+        ]
+    },
+    "foreign body in the gastrointestinal tract": {
+        "count": 127,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "foreign body in the nose": {
+        "count": 1,
+        "mapped_specialties": [
+            "ENT",
+            "Plastic Surgeon"
+        ]
+    },
+    "foreign body in the throat": {
+        "count": 156,
+        "mapped_specialties": [
+            "ENT"
+        ]
+    },
+    "foreign body in the vagina": {
+        "count": 21,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "fracture of the ankle": {
+        "count": 36,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the arm": {
+        "count": 437,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the facial bones": {
+        "count": 449,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the finger": {
+        "count": 8,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the foot": {
+        "count": 14,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the hand": {
+        "count": 111,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the jaw": {
+        "count": 75,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the leg": {
+        "count": 678,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the neck": {
+        "count": 41,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the patella": {
+        "count": 79,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the pelvis": {
+        "count": 184,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the rib": {
+        "count": 882,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the shoulder": {
+        "count": 162,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the skull": {
+        "count": 65,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fracture of the vertebra": {
+        "count": 270,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "friedrich ataxia": {
+        "count": 5,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "frostbite": {
+        "count": 12,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "fungal infection of the hair": {
+        "count": 1212,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "fungal infection of the skin": {
+        "count": 683,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "g6pd enzyme deficiency": {
+        "count": 6,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "galactorrhea of unknown cause": {
+        "count": 11,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "gallstone": {
+        "count": 904,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "ganglion cyst": {
+        "count": 675,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "gas gangrene": {
+        "count": 1,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "gastritis": {
+        "count": 679,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Internal Medicine"
+        ]
+    },
+    "gastroduodenal ulcer": {
+        "count": 683,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Internal Medicine"
+        ]
+    },
+    "gastroesophageal reflux disease (gerd)": {
+        "count": 448,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "gastrointestinal hemorrhage": {
+        "count": 1214,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "gastroparesis": {
+        "count": 179,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "genital herpes": {
+        "count": 242,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Dermatologist"
+        ]
+    },
+    "gestational diabetes": {
+        "count": 26,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "glaucoma": {
+        "count": 498,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Emergency Medicine"
+        ]
+    },
+    "glucocorticoid deficiency": {
+        "count": 17,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "goiter": {
+        "count": 75,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "gonorrhea": {
+        "count": 131,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "gout": {
+        "count": 1211,
+        "mapped_specialties": [
+            "Rheumatologist",
+            "Internal Medicine"
+        ]
+    },
+    "granuloma inguinale": {
+        "count": 10,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "graves disease": {
+        "count": 248,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "guillain barre syndrome": {
+        "count": 57,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "gum disease": {
+        "count": 894,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "gynecomastia": {
+        "count": 83,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hammer toe": {
+        "count": 9,
+        "mapped_specialties": [
+            "Orthopedist",
+            "Podiatrist"
+        ]
+    },
+    "hashimoto thyroiditis": {
+        "count": 2,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "head and neck cancer": {
+        "count": 326,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "head injury": {
+        "count": 164,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "headache after lumbar puncture": {
+        "count": 169,
+        "mapped_specialties": [
+            "Neurologist",
+            "Pain Management"
+        ]
+    },
+    "heart attack": {
+        "count": 907,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Emergency Medicine",
+            "Internal Medicine"
+        ]
+    },
+    "heart block": {
+        "count": 606,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Electrophysiologist"
+        ]
+    },
+    "heart contusion": {
+        "count": 11,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "heart failure": {
+        "count": 903,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "heat exhaustion": {
+        "count": 264,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "heat stroke": {
+        "count": 1,
+        "mapped_specialties": [
+            "Neurologist",
+            "Emergency Medicine",
+            "Vascular Neurologist"
+        ]
+    },
+    "hemangioma": {
+        "count": 676,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hemarthrosis": {
+        "count": 9,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hematoma": {
+        "count": 60,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hemiplegia": {
+        "count": 504,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hemochromatosis": {
+        "count": 3,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hemolytic anemia": {
+        "count": 27,
+        "mapped_specialties": [
+            "Hematologist",
+            "Internal Medicine"
+        ]
+    },
+    "hemophilia": {
+        "count": 21,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hemorrhoids": {
+        "count": 908,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hepatic encephalopathy": {
+        "count": 45,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hepatitis due to a toxin": {
+        "count": 357,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Hepatologist",
+            "Infectious Disease"
+        ]
+    },
+    "herniated disk": {
+        "count": 908,
+        "mapped_specialties": [
+            "General Surgeon"
+        ]
+    },
+    "herpangina": {
+        "count": 450,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hiatal hernia": {
+        "count": 906,
+        "mapped_specialties": [
+            "General Surgeon",
+            "Internal Medicine"
+        ]
+    },
+    "hidradenitis suppurativa": {
+        "count": 139,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "high blood pressure": {
+        "count": 1,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine",
+            "Family Medicine"
+        ]
+    },
+    "hirschsprung disease": {
+        "count": 19,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "hirsutism": {
+        "count": 31,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "histoplasmosis": {
+        "count": 5,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hormone disorder": {
+        "count": 55,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "hpv": {
+        "count": 13,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "human immunodeficiency virus infection (hiv)": {
+        "count": 2,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Family Medicine"
+        ]
+    },
+    "huntington disease": {
+        "count": 1,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "hydatidiform mole": {
+        "count": 62,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hydrocele of the testicle": {
+        "count": 227,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "hydrocephalus": {
+        "count": 155,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hydronephrosis": {
+        "count": 340,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hypercalcemia": {
+        "count": 10,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hypercholesterolemia": {
+        "count": 8,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hyperemesis gravidarum": {
+        "count": 912,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hypergammaglobulinemia": {
+        "count": 1,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hyperhidrosis": {
+        "count": 24,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hyperkalemia": {
+        "count": 657,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hyperlipidemia": {
+        "count": 3,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hypernatremia": {
+        "count": 74,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hyperopia": {
+        "count": 108,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hyperosmotic hyperketotic state": {
+        "count": 5,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hypertension of pregnancy": {
+        "count": 56,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine",
+            "Emergency Medicine"
+        ]
+    },
+    "hypertensive heart disease": {
+        "count": 902,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "hypertrophic obstructive cardiomyopathy (hocm)": {
+        "count": 6,
+        "mapped_specialties": [
+            "Cardiologist"
+        ]
+    },
+    "hypocalcemia": {
+        "count": 46,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hypoglycemia": {
+        "count": 1215,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hypokalemia": {
+        "count": 478,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hyponatremia": {
+        "count": 495,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hypothermia": {
+        "count": 13,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "hypothyroidism": {
+        "count": 74,
+        "mapped_specialties": [
+            "Endocrinologist",
+            "Internal Medicine"
+        ]
+    },
+    "hypovolemia": {
+        "count": 424,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "idiopathic absence of menstruation": {
+        "count": 493,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "idiopathic excessive menstruation": {
+        "count": 906,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "idiopathic infrequent menstruation": {
+        "count": 50,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "idiopathic irregular menstrual cycle": {
+        "count": 908,
+        "mapped_specialties": [
+            "Gynecologist"
+        ]
+    },
+    "idiopathic nonmenstrual bleeding": {
+        "count": 98,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Emergency Medicine"
+        ]
+    },
+    "idiopathic painful menstruation": {
+        "count": 906,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Pain Management"
+        ]
+    },
+    "ileus": {
+        "count": 449,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "impetigo": {
+        "count": 683,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "impulse control disorder": {
+        "count": 335,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "indigestion": {
+        "count": 447,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "induced abortion": {
+        "count": 287,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "infection of open wound": {
+        "count": 35,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Family Medicine"
+        ]
+    },
+    "infectious gastroenteritis": {
+        "count": 1212,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "ingrown toe nail": {
+        "count": 604,
+        "mapped_specialties": [
+            "Orthopedist",
+            "Podiatrist"
+        ]
+    },
+    "inguinal hernia": {
+        "count": 402,
+        "mapped_specialties": [
+            "General Surgeon",
+            "Internal Medicine"
+        ]
+    },
+    "injury of the ankle": {
+        "count": 182,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "injury to internal organ": {
+        "count": 131,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "injury to the abdomen": {
+        "count": 64,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "injury to the arm": {
+        "count": 1209,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "injury to the face": {
+        "count": 455,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "injury to the finger": {
+        "count": 7,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "injury to the hand": {
+        "count": 126,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "injury to the hip": {
+        "count": 16,
+        "mapped_specialties": [
+            "Orthopedist",
+            "Rheumatologist"
+        ]
+    },
+    "injury to the knee": {
+        "count": 53,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "injury to the leg": {
+        "count": 1206,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "injury to the shoulder": {
+        "count": 510,
+        "mapped_specialties": [
+            "Orthopedist",
+            "Physical Medicine"
+        ]
+    },
+    "injury to the spinal cord": {
+        "count": 29,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "injury to the trunk": {
+        "count": 905,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "insect bite": {
+        "count": 669,
+        "mapped_specialties": [
+            "Emergency Medicine",
+            "Toxicologist"
+        ]
+    },
+    "insulin overdose": {
+        "count": 9,
+        "mapped_specialties": [
+            "Toxicologist",
+            "Emergency Medicine"
+        ]
+    },
+    "interstitial lung disease": {
+        "count": 511,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "intertrigo (skin condition)": {
+        "count": 105,
+        "mapped_specialties": [
+            "Dermatologist"
+        ]
+    },
+    "intestinal cancer": {
+        "count": 49,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "intestinal disease": {
+        "count": 383,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "intestinal malabsorption": {
+        "count": 161,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "intestinal obstruction": {
+        "count": 445,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "intracerebral hemorrhage": {
+        "count": 603,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "intracranial abscess": {
+        "count": 12,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "intracranial hemorrhage": {
+        "count": 322,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "intussusception": {
+        "count": 4,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "iridocyclitis": {
+        "count": 496,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "iron deficiency anemia": {
+        "count": 683,
+        "mapped_specialties": [
+            "Hematologist",
+            "Internal Medicine"
+        ]
+    },
+    "irritable bowel syndrome": {
+        "count": 510,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "ischemia of the bowel": {
+        "count": 283,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "ischemic heart disease": {
+        "count": 886,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "itching of unknown cause": {
+        "count": 504,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "jaw disorder": {
+        "count": 336,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "joint effusion": {
+        "count": 449,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Internal Medicine"
+        ]
+    },
+    "juvenile rheumatoid arthritis": {
+        "count": 33,
+        "mapped_specialties": [
+            "Rheumatologist"
+        ]
+    },
+    "kaposi sarcoma": {
+        "count": 1,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "kidney cancer": {
+        "count": 80,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "kidney disease due to longstanding hypertension": {
+        "count": 17,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "kidney failure": {
+        "count": 282,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "kidney stone": {
+        "count": 904,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Internal Medicine"
+        ]
+    },
+    "knee ligament or meniscus tear": {
+        "count": 106,
+        "mapped_specialties": [
+            "Orthopedist",
+            "ENT",
+            "Sports Medicine"
+        ]
+    },
+    "labyrinthitis": {
+        "count": 654,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "lactose intolerance": {
+        "count": 137,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "laryngitis": {
+        "count": 678,
+        "mapped_specialties": [
+            "ENT",
+            "Family Medicine"
+        ]
+    },
+    "lateral epicondylitis (tennis elbow)": {
+        "count": 337,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "leukemia": {
+        "count": 10,
+        "mapped_specialties": [
+            "Hematologist",
+            "Oncologist"
+        ]
+    },
+    "lewy body dementia": {
+        "count": 79,
+        "mapped_specialties": [
+            "Neurologist",
+            "Geriatrician"
+        ]
+    },
+    "lice": {
+        "count": 65,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "lichen planus": {
+        "count": 9,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "lichen simplex": {
+        "count": 59,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "lipoma": {
+        "count": 684,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "liver cancer": {
+        "count": 49,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "liver disease": {
+        "count": 1209,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "lumbago": {
+        "count": 156,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "lung cancer": {
+        "count": 51,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "lung contusion": {
+        "count": 15,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "lyme disease": {
+        "count": 211,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "lymphadenitis": {
+        "count": 453,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "lymphangitis": {
+        "count": 3,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "lymphedema": {
+        "count": 505,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "lymphogranuloma venereum": {
+        "count": 20,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "lymphoma": {
+        "count": 133,
+        "mapped_specialties": [
+            "Hematologist",
+            "Oncologist"
+        ]
+    },
+    "macular degeneration": {
+        "count": 909,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "magnesium deficiency": {
+        "count": 35,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "malaria": {
+        "count": 15,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "male genitalia infection": {
+        "count": 138,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Family Medicine"
+        ]
+    },
+    "malignant hypertension": {
+        "count": 181,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine",
+            "Emergency Medicine"
+        ]
+    },
+    "marijuana abuse": {
+        "count": 1210,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Addiction Medicine"
+        ]
+    },
+    "mastectomy": {
+        "count": 17,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "mastoiditis": {
+        "count": 144,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "meckel diverticulum": {
+        "count": 4,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "melanoma": {
+        "count": 271,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "meniere disease": {
+        "count": 281,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "meningioma": {
+        "count": 18,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "meningitis": {
+        "count": 297,
+        "mapped_specialties": [
+            "Neurologist",
+            "Infectious Disease",
+            "Emergency Medicine"
+        ]
+    },
+    "menopause": {
+        "count": 76,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "metabolic disorder": {
+        "count": 34,
+        "mapped_specialties": [
+            "Endocrinologist",
+            "Internal Medicine"
+        ]
+    },
+    "metastatic cancer": {
+        "count": 27,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "migraine": {
+        "count": 221,
+        "mapped_specialties": [
+            "Neurologist",
+            "Internal Medicine"
+        ]
+    },
+    "missed abortion": {
+        "count": 375,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "mitral valve disease": {
+        "count": 504,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "mittelschmerz": {
+        "count": 53,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "molluscum contagiosum": {
+        "count": 511,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "mononeuritis": {
+        "count": 676,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "mononucleosis": {
+        "count": 331,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "moyamoya disease": {
+        "count": 12,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "mucositis": {
+        "count": 289,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "multiple myeloma": {
+        "count": 51,
+        "mapped_specialties": [
+            "Neurologist",
+            "Immunologist"
+        ]
+    },
+    "multiple sclerosis": {
+        "count": 910,
+        "mapped_specialties": [
+            "Neurologist",
+            "Immunologist"
+        ]
+    },
+    "mumps": {
+        "count": 45,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "muscle spasm": {
+        "count": 678,
+        "mapped_specialties": [
+            "Neurologist",
+            "Physical Medicine",
+            "Sports Medicine"
+        ]
+    },
+    "muscular dystrophy": {
+        "count": 45,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "myasthenia gravis": {
+        "count": 134,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "myelodysplastic syndrome": {
+        "count": 3,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "myocarditis": {
+        "count": 1,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "myoclonus": {
+        "count": 11,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "myopia": {
+        "count": 448,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "myositis": {
+        "count": 137,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "narcolepsy": {
+        "count": 186,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "nasal polyp": {
+        "count": 356,
+        "mapped_specialties": [
+            "ENT",
+            "Plastic Surgeon"
+        ]
+    },
+    "necrotizing fasciitis": {
+        "count": 3,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "neonatal jaundice": {
+        "count": 34,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "nerve impingement near the shoulder": {
+        "count": 280,
+        "mapped_specialties": [
+            "Neurologist",
+            "ENT"
+        ]
+    },
+    "neuralgia": {
+        "count": 684,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "neurofibromatosis": {
+        "count": 30,
+        "mapped_specialties": [
+            "Neurologist"
+        ]
+    },
+    "neuropathy due to drugs": {
+        "count": 40,
+        "mapped_specialties": [
+            "Neurologist",
+            "Internal Medicine"
+        ]
+    },
+    "neurosis": {
+        "count": 902,
+        "mapped_specialties": [
+            "Neurologist"
+        ]
+    },
+    "nonalcoholic liver disease (nash)": {
+        "count": 62,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "noninfectious gastroenteritis": {
+        "count": 1206,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "normal pressure hydrocephalus": {
+        "count": 26,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "nose disorder": {
+        "count": 1218,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "obesity": {
+        "count": 3,
+        "mapped_specialties": [
+            "Bariatric Surgeon",
+            "Endocrinologist"
+        ]
+    },
+    "obsessive compulsive disorder (ocd)": {
+        "count": 454,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "obstructive sleep apnea (osa)": {
+        "count": 1196,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Sleep Medicine",
+            "ENT"
+        ]
+    },
+    "omphalitis": {
+        "count": 7,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "onychomycosis": {
+        "count": 505,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "open wound due to trauma": {
+        "count": 1,
+        "mapped_specialties": [
+            "Hematologist",
+            "Oncologist"
+        ]
+    },
+    "open wound from surgical incision": {
+        "count": 7,
+        "mapped_specialties": [
+            "Wound Care Specialist",
+            "General Surgeon"
+        ]
+    },
+    "open wound of the abdomen": {
+        "count": 3,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the arm": {
+        "count": 10,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the back": {
+        "count": 9,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the cheek": {
+        "count": 1,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the chest": {
+        "count": 1,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the ear": {
+        "count": 33,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the eye": {
+        "count": 32,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the face": {
+        "count": 3,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the finger": {
+        "count": 4,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the foot": {
+        "count": 27,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the hand": {
+        "count": 4,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the head": {
+        "count": 1,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the jaw": {
+        "count": 2,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the knee": {
+        "count": 1,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the lip": {
+        "count": 26,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the mouth": {
+        "count": 95,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the neck": {
+        "count": 32,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the nose": {
+        "count": 11,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "open wound of the shoulder": {
+        "count": 4,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "oppositional disorder": {
+        "count": 431,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "optic neuritis": {
+        "count": 10,
+        "mapped_specialties": [
+            "Neurologist",
+            "Physical Medicine"
+        ]
+    },
+    "oral leukoplakia": {
+        "count": 4,
+        "mapped_specialties": [
+            "Dentist",
+            "Oral Surgeon"
+        ]
+    },
+    "oral mucosal lesion": {
+        "count": 606,
+        "mapped_specialties": [
+            "Dentist",
+            "Oral Surgeon"
+        ]
+    },
+    "oral thrush (yeast infection)": {
+        "count": 681,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Dentist",
+            "Oral Surgeon",
+            "Internal Medicine"
+        ]
+    },
+    "orbital cellulitis": {
+        "count": 170,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "orthostatic hypotension": {
+        "count": 283,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "osteoarthritis": {
+        "count": 896,
+        "mapped_specialties": [
+            "Rheumatologist"
+        ]
+    },
+    "osteochondroma": {
+        "count": 211,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "osteochondrosis": {
+        "count": 109,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "osteomyelitis": {
+        "count": 188,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Orthopedist"
+        ]
+    },
+    "osteoporosis": {
+        "count": 378,
+        "mapped_specialties": [
+            "Endocrinologist",
+            "Rheumatologist"
+        ]
+    },
+    "otitis externa (swimmer's ear)": {
+        "count": 904,
+        "mapped_specialties": [
+            "ENT"
+        ]
+    },
+    "otitis media": {
+        "count": 910,
+        "mapped_specialties": [
+            "ENT",
+            "Family Medicine"
+        ]
+    },
+    "otosclerosis": {
+        "count": 19,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "ovarian cancer": {
+        "count": 19,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "ovarian cyst": {
+        "count": 499,
+        "mapped_specialties": [
+            "Gynecologist"
+        ]
+    },
+    "ovarian torsion": {
+        "count": 67,
+        "mapped_specialties": [
+            "Gynecologist"
+        ]
+    },
+    "overflow incontinence": {
+        "count": 212,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pain after an operation": {
+        "count": 908,
+        "mapped_specialties": [
+            "Pain Management",
+            "Physical Medicine"
+        ]
+    },
+    "pain disorder affecting the neck": {
+        "count": 387,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "pancreatic cancer": {
+        "count": 204,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "panic attack": {
+        "count": 188,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Emergency Medicine",
+            "Internal Medicine"
+        ]
+    },
+    "panic disorder": {
+        "count": 909,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "parasitic disease": {
+        "count": 74,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "parathyroid adenoma": {
+        "count": 18,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "parkinson disease": {
+        "count": 513,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "paronychia": {
+        "count": 438,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "paroxysmal supraventricular tachycardia": {
+        "count": 375,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "paroxysmal ventricular tachycardia": {
+        "count": 671,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pelvic fistula": {
+        "count": 5,
+        "mapped_specialties": [
+            "Colorectal Surgeon",
+            "General Surgeon"
+        ]
+    },
+    "pelvic inflammatory disease": {
+        "count": 900,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "pelvic organ prolapse": {
+        "count": 438,
+        "mapped_specialties": [
+            "Transplant Surgeon",
+            "Critical Care"
+        ]
+    },
+    "pemphigus": {
+        "count": 7,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pericarditis": {
+        "count": 147,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "peripheral arterial disease": {
+        "count": 113,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "peripheral arterial embolism": {
+        "count": 135,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Emergency Medicine"
+        ]
+    },
+    "peripheral nerve disorder": {
+        "count": 1215,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "perirectal infection": {
+        "count": 137,
+        "mapped_specialties": [
+            "Urologist",
+            "Internal Medicine",
+            "Family Medicine"
+        ]
+    },
+    "peritonitis": {
+        "count": 381,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "peritonsillar abscess": {
+        "count": 246,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "persistent vomiting of unknown cause": {
+        "count": 186,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "personality disorder": {
+        "count": 911,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "peyronie disease": {
+        "count": 21,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "pharyngitis": {
+        "count": 19,
+        "mapped_specialties": [
+            "ENT",
+            "Family Medicine"
+        ]
+    },
+    "phimosis": {
+        "count": 60,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pilonidal cyst": {
+        "count": 339,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pinguecula": {
+        "count": 6,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pinworm infection": {
+        "count": 87,
+        "mapped_specialties": [
+            "Urologist",
+            "Internal Medicine",
+            "Family Medicine"
+        ]
+    },
+    "pituitary adenoma": {
+        "count": 29,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "pituitary disorder": {
+        "count": 30,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "pityriasis rosea": {
+        "count": 71,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "placenta previa": {
+        "count": 9,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "placental abruption": {
+        "count": 14,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "plantar fasciitis": {
+        "count": 199,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pleural effusion": {
+        "count": 607,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Internal Medicine"
+        ]
+    },
+    "pneumoconiosis": {
+        "count": 14,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pneumonia": {
+        "count": 1212,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "pneumothorax": {
+        "count": 296,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "poisoning due to analgesics": {
+        "count": 66,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "poisoning due to anticonvulsants": {
+        "count": 41,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "poisoning due to antidepressants": {
+        "count": 29,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "poisoning due to antihypertensives": {
+        "count": 17,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "poisoning due to antimicrobial drugs": {
+        "count": 97,
+        "mapped_specialties": [
+            "Hematologist",
+            "Oncologist"
+        ]
+    },
+    "poisoning due to antipsychotics": {
+        "count": 10,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "poisoning due to ethylene glycol": {
+        "count": 24,
+        "mapped_specialties": [
+            "Hematologist",
+            "Oncologist"
+        ]
+    },
+    "poisoning due to gas": {
+        "count": 194,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "poisoning due to opioids": {
+        "count": 9,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "poisoning due to sedatives": {
+        "count": 126,
+        "mapped_specialties": [
+            "Nephrologist",
+            "Hematologist"
+        ]
+    },
+    "polycystic kidney disease": {
+        "count": 183,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "polycystic ovarian syndrome (pcos)": {
+        "count": 268,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "polycythemia vera": {
+        "count": 49,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "polymyalgia rheumatica": {
+        "count": 136,
+        "mapped_specialties": [
+            "Rheumatologist"
+        ]
+    },
+    "post-traumatic stress disorder (ptsd)": {
+        "count": 607,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "postoperative infection": {
+        "count": 111,
+        "mapped_specialties": [
+            "Urologist",
+            "Internal Medicine",
+            "Family Medicine"
+        ]
+    },
+    "postpartum depression": {
+        "count": 494,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Psychologist"
+        ]
+    },
+    "preeclampsia": {
+        "count": 217,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pregnancy": {
+        "count": 13,
+        "mapped_specialties": [
+            "Obstetrician",
+            "Maternal-Fetal Medicine"
+        ]
+    },
+    "premature atrial contractions (pacs)": {
+        "count": 220,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Electrophysiologist"
+        ]
+    },
+    "premature ovarian failure": {
+        "count": 48,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "premature rupture of amniotic membrane": {
+        "count": 9,
+        "mapped_specialties": [
+            "Neonatologist",
+            "Pediatrician"
+        ]
+    },
+    "premature ventricular contractions (pvcs)": {
+        "count": 325,
+        "mapped_specialties": [
+            "Neonatologist",
+            "Pediatrician"
+        ]
+    },
+    "premenstrual tension syndrome": {
+        "count": 137,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "presbyacusis": {
+        "count": 55,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "presbyopia": {
+        "count": 212,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "priapism": {
+        "count": 6,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "primary immunodeficiency": {
+        "count": 36,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "primary insomnia": {
+        "count": 190,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "primary kidney disease": {
+        "count": 34,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "primary thrombocythemia": {
+        "count": 3,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "problem during pregnancy": {
+        "count": 913,
+        "mapped_specialties": [
+            "Obstetrician",
+            "Maternal-Fetal Medicine"
+        ]
+    },
+    "prostate cancer": {
+        "count": 135,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "prostatitis": {
+        "count": 681,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "protein deficiency": {
+        "count": 64,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pseudohypoparathyroidism": {
+        "count": 12,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "pseudotumor cerebri": {
+        "count": 48,
+        "mapped_specialties": [
+            "Oncologist"
+        ]
+    },
+    "psoriasis": {
+        "count": 912,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "psychosexual disorder": {
+        "count": 168,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "psychotic disorder": {
+        "count": 902,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "pterygium": {
+        "count": 215,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pulmonary congestion": {
+        "count": 497,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Emergency Medicine"
+        ]
+    },
+    "pulmonary embolism": {
+        "count": 880,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Emergency Medicine"
+        ]
+    },
+    "pulmonary eosinophilia": {
+        "count": 185,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Emergency Medicine"
+        ]
+    },
+    "pulmonary fibrosis": {
+        "count": 118,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Emergency Medicine"
+        ]
+    },
+    "pulmonary hypertension": {
+        "count": 446,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Cardiologist"
+        ]
+    },
+    "pulmonic valve disease": {
+        "count": 11,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "pyelonephritis": {
+        "count": 903,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pyloric stenosis": {
+        "count": 16,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "pyogenic skin infection": {
+        "count": 911,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Family Medicine"
+        ]
+    },
+    "raynaud disease": {
+        "count": 12,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "reactive arthritis": {
+        "count": 10,
+        "mapped_specialties": [
+            "Rheumatologist"
+        ]
+    },
+    "rectal disorder": {
+        "count": 902,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "restless leg syndrome": {
+        "count": 283,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "retinal detachment": {
+        "count": 280,
+        "mapped_specialties": [
+            "Ophthalmologist"
+        ]
+    },
+    "retinopathy due to high blood pressure": {
+        "count": 138,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine",
+            "Family Medicine"
+        ]
+    },
+    "rhabdomyolysis": {
+        "count": 16,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "rheumatic fever": {
+        "count": 2,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "rheumatoid arthritis": {
+        "count": 678,
+        "mapped_specialties": [
+            "Rheumatologist"
+        ]
+    },
+    "rocky mountain spotted fever": {
+        "count": 1,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "rosacea": {
+        "count": 678,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "rotator cuff injury": {
+        "count": 111,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "salivary gland disorder": {
+        "count": 62,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "sarcoidosis": {
+        "count": 330,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "scabies": {
+        "count": 187,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "scar": {
+        "count": 256,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "scarlet fever": {
+        "count": 90,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "schizophrenia": {
+        "count": 890,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "sciatica": {
+        "count": 668,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "scleritis": {
+        "count": 46,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "scleroderma": {
+        "count": 338,
+        "mapped_specialties": [
+            "Rheumatologist"
+        ]
+    },
+    "scoliosis": {
+        "count": 171,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "scurvy": {
+        "count": 4,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "seasonal allergies (hay fever)": {
+        "count": 910,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "sebaceous cyst": {
+        "count": 913,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "seborrheic dermatitis": {
+        "count": 880,
+        "mapped_specialties": [
+            "Dermatologist",
+            "Allergist"
+        ]
+    },
+    "seborrheic keratosis": {
+        "count": 870,
+        "mapped_specialties": [
+            "Dermatologist"
+        ]
+    },
+    "sensorineural hearing loss": {
+        "count": 681,
+        "mapped_specialties": [
+            "Audiologist",
+            "ENT"
+        ]
+    },
+    "sepsis": {
+        "count": 909,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Critical Care",
+            "Emergency Medicine"
+        ]
+    },
+    "septic arthritis": {
+        "count": 62,
+        "mapped_specialties": [
+            "Rheumatologist"
+        ]
+    },
+    "shingles (herpes zoster)": {
+        "count": 379,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "sialoadenitis": {
+        "count": 509,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "sick sinus syndrome": {
+        "count": 158,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "sickle cell anemia": {
+        "count": 226,
+        "mapped_specialties": [
+            "Hematologist",
+            "Internal Medicine"
+        ]
+    },
+    "sickle cell crisis": {
+        "count": 913,
+        "mapped_specialties": [
+            "Hematologist"
+        ]
+    },
+    "sinus bradycardia": {
+        "count": 909,
+        "mapped_specialties": [
+            "ENT",
+            "Allergist"
+        ]
+    },
+    "sjogren syndrome": {
+        "count": 92,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "skin cancer": {
+        "count": 661,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "skin disorder": {
+        "count": 676,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "skin pigmentation disorder": {
+        "count": 909,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "skin polyp": {
+        "count": 897,
+        "mapped_specialties": [
+            "Dermatologist"
+        ]
+    },
+    "smoking or tobacco addiction": {
+        "count": 883,
+        "mapped_specialties": [
+            "Addiction Medicine",
+            "Psychiatrist"
+        ]
+    },
+    "social phobia": {
+        "count": 511,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "soft tissue sarcoma": {
+        "count": 171,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "somatization disorder": {
+        "count": 79,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "spermatocele": {
+        "count": 81,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "spherocytosis": {
+        "count": 5,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "spina bifida": {
+        "count": 82,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "spinal stenosis": {
+        "count": 1207,
+        "mapped_specialties": [
+            "Neurologist",
+            "Neurosurgeon"
+        ]
+    },
+    "spinocerebellar ataxia": {
+        "count": 8,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "spondylitis": {
+        "count": 451,
+        "mapped_specialties": [
+            "Rheumatologist",
+            "Orthopedist"
+        ]
+    },
+    "spondylolisthesis": {
+        "count": 673,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "spondylosis": {
+        "count": 1216,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "spontaneous abortion": {
+        "count": 1212,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "sporotrichosis": {
+        "count": 3,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "sprain or strain": {
+        "count": 1212,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "stenosis of the tear duct": {
+        "count": 102,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "stomach cancer": {
+        "count": 155,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "strep throat": {
+        "count": 1210,
+        "mapped_specialties": [
+            "ENT"
+        ]
+    },
+    "stress incontinence": {
+        "count": 255,
+        "mapped_specialties": [
+            "Psychiatrist",
+            "Psychologist"
+        ]
+    },
+    "stricture of the esophagus": {
+        "count": 86,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "stroke": {
+        "count": 642,
+        "mapped_specialties": [
+            "Neurologist",
+            "Emergency Medicine",
+            "Vascular Neurologist"
+        ]
+    },
+    "stye": {
+        "count": 908,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "subacute thyroiditis": {
+        "count": 30,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Endocrinologist",
+            "Emergency Medicine"
+        ]
+    },
+    "subarachnoid hemorrhage": {
+        "count": 140,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "subconjunctival hemorrhage": {
+        "count": 249,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "subdural hemorrhage": {
+        "count": 139,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "substance-related mental disorder": {
+        "count": 213,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "syndrome of inappropriate secretion of adh (siadh)": {
+        "count": 4,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "syphilis": {
+        "count": 30,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "syringomyelia": {
+        "count": 14,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "systemic lupus erythematosis (sle)": {
+        "count": 159,
+        "mapped_specialties": [
+            "Rheumatologist",
+            "Immunologist"
+        ]
+    },
+    "teething syndrome": {
+        "count": 438,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "temporary or benign blood in urine": {
+        "count": 897,
+        "mapped_specialties": [
+            "Hematologist"
+        ]
+    },
+    "temporomandibular joint disorder": {
+        "count": 341,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "tendinitis": {
+        "count": 678,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "tension headache": {
+        "count": 279,
+        "mapped_specialties": [
+            "Neurologist",
+            "Pain Management"
+        ]
+    },
+    "testicular cancer": {
+        "count": 10,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "testicular disorder": {
+        "count": 61,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "testicular torsion": {
+        "count": 90,
+        "mapped_specialties": [
+            "Urologist",
+            "Pediatric Urologist"
+        ]
+    },
+    "thalassemia": {
+        "count": 1,
+        "mapped_specialties": [
+            "Hematologist"
+        ]
+    },
+    "thoracic aortic aneurysm": {
+        "count": 168,
+        "mapped_specialties": [
+            "Vascular Surgeon",
+            "Cardiologist"
+        ]
+    },
+    "thoracic outlet syndrome": {
+        "count": 180,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "threatened pregnancy": {
+        "count": 905,
+        "mapped_specialties": [
+            "Obstetrician",
+            "Maternal-Fetal Medicine"
+        ]
+    },
+    "thrombocytopenia": {
+        "count": 126,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "thrombophlebitis": {
+        "count": 451,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "thyroid cancer": {
+        "count": 9,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "thyroid disease": {
+        "count": 17,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "thyroid nodule": {
+        "count": 216,
+        "mapped_specialties": [
+            "Endocrinologist",
+            "Internal Medicine"
+        ]
+    },
+    "tic (movement) disorder": {
+        "count": 87,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "tietze syndrome": {
+        "count": 333,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "tinnitus of unknown cause": {
+        "count": 279,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "tonsillar hypertrophy": {
+        "count": 339,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "tonsillitis": {
+        "count": 446,
+        "mapped_specialties": [
+            "ENT",
+            "Family Medicine"
+        ]
+    },
+    "tooth abscess": {
+        "count": 669,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "tooth disorder": {
+        "count": 671,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "torticollis": {
+        "count": 280,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "tourette syndrome": {
+        "count": 31,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "toxic multinodular goiter": {
+        "count": 79,
+        "mapped_specialties": [
+            "Toxicologist",
+            "Emergency Medicine"
+        ]
+    },
+    "toxoplasmosis": {
+        "count": 12,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "tracheitis": {
+        "count": 189,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "transient ischemic attack": {
+        "count": 655,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Emergency Medicine",
+            "Internal Medicine"
+        ]
+    },
+    "trichiasis": {
+        "count": 30,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "trichinosis": {
+        "count": 10,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "trichomonas infection": {
+        "count": 339,
+        "mapped_specialties": [
+            "Urologist",
+            "Internal Medicine",
+            "Family Medicine"
+        ]
+    },
+    "tricuspid valve disease": {
+        "count": 9,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "trigeminal neuralgia": {
+        "count": 201,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "trigger finger (finger disorder)": {
+        "count": 87,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "tuberculosis": {
+        "count": 23,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Pulmonologist"
+        ]
+    },
+    "tuberous sclerosis": {
+        "count": 6,
+        "mapped_specialties": [
+            "Neurologist",
+            "Immunologist"
+        ]
+    },
+    "turner syndrome": {
+        "count": 1,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "typhoid fever": {
+        "count": 1,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "ulcerative colitis": {
+        "count": 377,
+        "mapped_specialties": [
+            "Gastroenterologist"
+        ]
+    },
+    "urethral disorder": {
+        "count": 315,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "urethral stricture": {
+        "count": 279,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "urethral valves": {
+        "count": 35,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "urethritis": {
+        "count": 453,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "urge incontinence": {
+        "count": 495,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "urinary tract infection": {
+        "count": 910,
+        "mapped_specialties": [
+            "Urologist",
+            "Internal Medicine",
+            "Family Medicine"
+        ]
+    },
+    "urinary tract obstruction": {
+        "count": 683,
+        "mapped_specialties": [
+            "Urologist",
+            "Internal Medicine",
+            "Family Medicine"
+        ]
+    },
+    "uterine atony": {
+        "count": 219,
+        "mapped_specialties": [
+            "Gynecologist"
+        ]
+    },
+    "uterine cancer": {
+        "count": 5,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "uterine fibroids": {
+        "count": 450,
+        "mapped_specialties": [
+            "Gynecologist"
+        ]
+    },
+    "uveitis": {
+        "count": 19,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "vacterl syndrome": {
+        "count": 9,
+        "mapped_specialties": [
+            "Neurologist",
+            "Critical Care"
+        ]
+    },
+    "vaginal cyst": {
+        "count": 1215,
+        "mapped_specialties": [
+            "Gynecologist"
+        ]
+    },
+    "vaginal yeast infection": {
+        "count": 608,
+        "mapped_specialties": [
+            "Ophthalmologist",
+            "Family Medicine"
+        ]
+    },
+    "vaginismus": {
+        "count": 77,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "vaginitis": {
+        "count": 909,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "valley fever": {
+        "count": 9,
+        "mapped_specialties": [
+            "Infectious Disease",
+            "Internal Medicine"
+        ]
+    },
+    "varicocele of the testicles": {
+        "count": 682,
+        "mapped_specialties": [
+            "ENT",
+            "Infectious Disease"
+        ]
+    },
+    "varicose veins": {
+        "count": 113,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "vasculitis": {
+        "count": 299,
+        "mapped_specialties": [
+            "Rheumatologist",
+            "Immunologist"
+        ]
+    },
+    "venous insufficiency": {
+        "count": 336,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "vertebrobasilar insufficiency": {
+        "count": 23,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "vesicoureteral reflux": {
+        "count": 10,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "viral exanthem": {
+        "count": 601,
+        "mapped_specialties": [
+            "Infectious Disease"
+        ]
+    },
+    "viral hepatitis": {
+        "count": 35,
+        "mapped_specialties": [
+            "Gastroenterologist",
+            "Hepatologist",
+            "Infectious Disease"
+        ]
+    },
+    "viral warts": {
+        "count": 453,
+        "mapped_specialties": [
+            "Infectious Disease"
+        ]
+    },
+    "vitamin a deficiency": {
+        "count": 5,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "vitamin b12 deficiency": {
+        "count": 80,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "vitamin d deficiency": {
+        "count": 17,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "vitreous degeneration": {
+        "count": 341,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "vitreous hemorrhage": {
+        "count": 27,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "vocal cord polyp": {
+        "count": 90,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "volvulus": {
+        "count": 11,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "von willebrand disease": {
+        "count": 5,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "vulvar cancer": {
+        "count": 6,
+        "mapped_specialties": [
+            "Pulmonologist",
+            "Oncologist",
+            "Thoracic Surgeon"
+        ]
+    },
+    "vulvar disorder": {
+        "count": 160,
+        "mapped_specialties": [
+            "Psychiatrist"
+        ]
+    },
+    "vulvodynia": {
+        "count": 1218,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "wernicke korsakoff syndrome": {
+        "count": 6,
+        "mapped_specialties": [
+            "Endocrinologist"
+        ]
+    },
+    "white blood cell disease": {
+        "count": 504,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "whooping cough": {
+        "count": 43,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    },
+    "wilson disease": {
+        "count": 14,
+        "mapped_specialties": [
+            "Cardiologist",
+            "Internal Medicine"
+        ]
+    },
+    "yeast infection": {
+        "count": 470,
+        "mapped_specialties": [
+            "Urologist",
+            "Internal Medicine",
+            "Family Medicine"
+        ]
+    },
+    "zenker diverticulum": {
+        "count": 11,
+        "mapped_specialties": [
+            "Internal Medicine",
+            "Family Medicine",
+            "General Practice"
+        ]
+    }
+}
