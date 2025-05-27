@@ -16,10 +16,16 @@ import pandas as pd
 from typing import List, Optional
 from pydantic import BaseModel
 
+# Import the disease explanation router
+from disease_explanation import router as explanation_router
+
 # Create database tables
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+
+# Include the explanation router
+app.include_router(explanation_router)
 
 # CORS middleware configuration
 app.add_middleware(
@@ -32,36 +38,123 @@ app.add_middleware(
 
 # Define paths relative to the current file
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "models", "random_forest_disease_model.pkl")
-ENCODER_PATH = os.path.join(BASE_DIR, "models", "label_encoder.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "..", "new model", "app", "disease_model.pkl")
+METRICS_PATH = os.path.join(BASE_DIR, "..", "new model", "app", "model_metrics.pkl")
 SYMPTOMS_PATH = os.path.join(BASE_DIR, "models", "symptoms.json")
+
+# Global variables to store model data
+model = None
+label_encoder = None
+model_symptoms = None
+feature_vector_template = None
+
+# Cache for disease predictions and feature importances
+disease_features_cache = {}
+prediction_cache = {}
+CACHE_TIMEOUT = 300  # 5 minutes
 
 # Load the model and encoders with lower memory usage
 try:
     print("Loading model files...")
     
-    # Load symptoms first as it's the smallest
-    with open(SYMPTOMS_PATH, 'r') as f:
-        symptoms_data = json.load(f)
-        SYMPTOMS = symptoms_data['symptoms']
-    print(f"Loaded {len(SYMPTOMS)} symptoms")
-    
-    # Load label encoder next
-    print("Loading label encoder...")
-    label_encoder = joblib.load(ENCODER_PATH)
-    print("Label encoder loaded successfully")
-    
-    # Load model with memory mapping
+    # Load model bundle with optimized memory mapping
     print("Loading disease prediction model (this may take a moment)...")
-    model = joblib.load(MODEL_PATH, mmap_mode='r')
+    model_bundle = joblib.load(MODEL_PATH)
     print("Model loaded successfully!")
+    
+    # Extract components from the bundle
+    if isinstance(model_bundle, dict):
+        # Extract model, encoder and symptoms from the bundle
+        model = model_bundle.get("model")
+        label_encoder = model_bundle.get("encoder")  # Changed from "label_encoder" to "encoder"
+        bundle_symptoms = model_bundle.get("symptoms")
+        
+        if bundle_symptoms:
+            SYMPTOMS = bundle_symptoms
+            print(f"Loaded {len(SYMPTOMS)} symptoms from model bundle")
+        else:
+            # Fall back to symptoms.json if bundle doesn't have symptoms
+            with open(SYMPTOMS_PATH, 'r') as f:
+                symptoms_data = json.load(f)
+                SYMPTOMS = symptoms_data['symptoms']
+            print(f"Loaded {len(SYMPTOMS)} symptoms from symptoms.json")
+    else:
+        model = model_bundle
+        label_encoder = None
+        
+        # Load symptoms from file
+        with open(SYMPTOMS_PATH, 'r') as f:
+            symptoms_data = json.load(f)
+            SYMPTOMS = symptoms_data['symptoms']
+        print(f"Loaded {len(SYMPTOMS)} symptoms from symptoms.json")
+
+    # If label_encoder is None, load it from create_label_encoder.py output
+    if label_encoder is None:
+        print("Model bundle missing encoder, loading from separate file...")
+        encoder_path = os.path.join(BASE_DIR, "..", "new model", "app", "label_encoder.pkl")
+        try:
+            label_encoder = joblib.load(encoder_path)
+            print(f"Successfully loaded label encoder with {len(label_encoder.classes_)} classes")
+        except Exception as e:
+            print(f"Error loading label encoder: {e}")
+            # Create a simple label encoder
+            from sklearn.preprocessing import LabelEncoder
+            label_encoder = LabelEncoder()
+            if hasattr(model, "classes_"):
+                label_encoder.classes_ = model.classes_
+                print(f"Created label encoder from model classes: {len(label_encoder.classes_)} classes")
+            else:
+                # Fallback to common disease names
+                print("Using fallback disease classes")
+                # Try to read from diseases_list.json
+                try:
+                    diseases_path = os.path.join(BASE_DIR, "..", "diseases_list.json")
+                    with open(diseases_path, 'r') as f:
+                        diseases_data = json.load(f)
+                        diseases = [d["disease"] for d in diseases_data[:50]]  # Limit to first 50
+                        label_encoder.classes_ = np.array(diseases)
+                        print(f"Created label encoder with {len(diseases)} diseases from diseases_list.json")
+                except Exception as e:
+                    print(f"Error loading diseases: {e}")
+                    # Hardcoded fallback
+                    label_encoder.classes_ = np.array([
+                        "Common Cold", "Pneumonia", "Diabetes", "Hypertension", 
+                        "Arthritis", "Migraine", "Asthma", "Influenza",
+                        "Hepatitis", "Dengue", "Tuberculosis", "Malaria",
+                        "Typhoid", "Jaundice", "Chicken pox", "Measles"
+                    ])
+                    print(f"Created fallback label encoder with {len(label_encoder.classes_)} classes")
+    
+    # Pre-compute model features and template
+    model_symptoms = SYMPTOMS if model.feature_names_in_ is None else model.feature_names_in_
+    feature_vector_template = pd.DataFrame(np.zeros((1, len(model_symptoms))), columns=model_symptoms)
+    
+    # Pre-compute disease features for all diseases
+    print("Pre-computing disease features...")
+    for idx, disease in enumerate(label_encoder.classes_):
+        # Convert disease to string if needed
+        disease_str = str(disease) if not isinstance(disease, str) else disease
+        
+        # Get feature importances for this disease
+        if hasattr(model, "feature_importances_"):
+            # For single model with feature_importances_ attribute
+            disease_features = model.feature_importances_
+        elif hasattr(model, "estimators_") and len(model.estimators_) > idx:
+            # For ensemble models with estimators
+            disease_features = model.estimators_[idx].feature_importances_
+        else:
+            # Fallback to equal importance
+            disease_features = np.ones(len(model_symptoms)) / len(model_symptoms)
+        
+        disease_features_cache[disease_str] = disease_features
+    
+    print(f"Initialized prediction system with {len(model_symptoms)} features")
     
 except Exception as e:
     print(f"Error loading model and encoders: {str(e)}")
     print(f"Current directory: {os.getcwd()}")
     print(f"Looking for files in: {BASE_DIR}")
     print(f"Model path: {MODEL_PATH}")
-    print(f"Encoder path: {ENCODER_PATH}")
     print(f"Symptoms path: {SYMPTOMS_PATH}")
     raise
 
@@ -93,6 +186,7 @@ async def register_user(user: schemas.UserCreate, db: Session = Depends(get_db))
     db_user = models.User(
         username=user.username,
         email=user.email,
+        full_name=user.full_name,
         gender=user.gender,
         password=user.password  # Store password as-is
     )
@@ -138,7 +232,9 @@ async def login(user_credentials: schemas.UserLogin, db: Session = Depends(get_d
         return {
             "status": "success",
             "username": user.username,
-            "is_admin": user.is_admin
+            "is_admin": user.is_admin,
+            "user_id": user.id,
+            "full_name": user.full_name
         }
         
     except HTTPException as he:
@@ -159,117 +255,256 @@ async def get_symptoms():
 @app.post("/api/predict", response_model=schemas.PredictionResponse)
 async def predict_disease(symptoms: schemas.SymptomsInput, db: Session = Depends(get_db)):
     try:
-        print(f"Received prediction request with symptoms: {symptoms.symptoms}")
+        if not symptoms.symptoms:
+            raise HTTPException(
+                status_code=400,
+                detail="Please provide at least one symptom"
+            )
         
-        # Create feature vector with named features
-        feature_vector = pd.DataFrame(np.zeros((1, len(SYMPTOMS))), columns=SYMPTOMS)
+        # Sort symptoms for consistent cache key
+        sorted_symptoms = sorted(symptoms.symptoms)
+        cache_key = ','.join(sorted_symptoms)
+        
+        # Check cache first
+        cached_result = prediction_cache.get(cache_key)
+        if cached_result:
+            return cached_result
+        
+        # Create feature vector using the template (avoid copying large arrays)
+        feature_vector = feature_vector_template.copy()
+        valid_symptoms = []
+        invalid_symptoms = []
+        
+        # Map symptoms to feature vector (optimized)
         for symptom in symptoms.symptoms:
-            if symptom in SYMPTOMS:
-                feature_vector[symptom] = 1
+            if symptom in model_symptoms:
+                feature_vector.at[0, symptom] = 1
+                valid_symptoms.append(symptom)
             else:
-                print(f"Warning: Unknown symptom '{symptom}'")
+                invalid_symptoms.append(symptom)
         
-        print("Feature vector created")
-        print(f"Non-zero features: {feature_vector.loc[0, feature_vector.iloc[0] > 0].index.tolist()}")
+        if not valid_symptoms:
+            raise HTTPException(
+                status_code=400,
+                detail="No valid symptoms provided. Please check your symptom names."
+            )
 
-        # Make prediction
-        print("Making prediction...")
-        prediction = model.predict(feature_vector)
-        probabilities = model.predict_proba(feature_vector)
-        max_prob = np.max(probabilities)
+        # Get probabilities for all diseases using the model
+        probabilities = model.predict_proba(feature_vector)[0]
         
-        # Get predicted disease name
-        disease = label_encoder.inverse_transform(prediction)[0]
-        print(f"Predicted disease: {disease} with confidence {max_prob:.2f}")
+        # Get predictions with confidence scores
+        disease_probs = list(zip(label_encoder.classes_, probabilities))
         
-        # Get relevant specialties for the predicted disease
-        relevant_specialties = get_relevant_specialties(disease)
-        print(f"Relevant specialties: {relevant_specialties}")
+        # Define common mental health symptoms (moved outside the loop)
+        mental_health_symptoms = {
+            'anxiety', 'depression', 'insomnia', 'fatigue', 'mood swings', 
+            'irritability', 'stress', 'panic attacks', 'emotional', 'nervousness',
+            'anxiety and nervousness', 'depressive or psychotic symptoms'
+        }
         
+        is_mental_health = any(s in mental_health_symptoms for s in valid_symptoms)
+        
+        # Filter and sort predictions (optimized)
+        relevant_predictions = []
+        for disease, prob in disease_probs:
+            if prob < 0.15:  # Early skip for low probability
+                continue
+                
+            try:
+                # Ensure disease is a string for processing
+                disease_str = str(disease) if not isinstance(disease, str) else disease
+                
+                # Get feature importances for this disease
+                disease_features = disease_features_cache.get(disease_str)
+                if disease_features is None:
+                    # If not in cache, use default importances
+                    disease_features = np.ones(len(model_symptoms)) / len(model_symptoms)
+                
+                # Get important symptoms with their importance scores
+                symptom_importance = [(sym, imp) for sym, imp in zip(model_symptoms, disease_features) if imp > 0.01]
+                
+                # Calculate symptom matches (optimized)
+                matching_symptoms = []
+                total_importance = 0
+                matched_importance = 0
+                
+                for sym, imp in symptom_importance:
+                    total_importance += imp
+                    if sym in valid_symptoms:
+                        matching_symptoms.append({"symptom": sym, "importance": float(imp)})
+                        matched_importance += imp
+                
+                if not matching_symptoms:
+                    continue
+                
+                # Calculate scores
+                symptom_coverage = matched_importance / total_importance if total_importance > 0 else 0
+                matching_count = len(matching_symptoms)
+                
+                # Adjust confidence for mental health conditions
+                adjusted_prob = prob
+                if is_mental_health:
+                    # Convert disease to string if it's not already
+                    if any(mh in disease_str.lower() for mh in ['anxiety', 'depression', 'stress', 'disorder', 'mental']):
+                        adjusted_prob *= 1.5
+                    else:
+                        adjusted_prob *= 0.5
+                
+                severity_score = matched_importance * adjusted_prob
+                
+                # Only include relevant predictions
+                if ((adjusted_prob >= 0.15 and symptom_coverage >= 0.3) or
+                    (matching_count >= 2 and adjusted_prob >= 0.4) or
+                    (is_mental_health and 
+                     any(mh in disease_str.lower() for mh in ['anxiety', 'depression', 'stress']) and 
+                     adjusted_prob >= 0.2)):
+                    
+                    relevant_predictions.append({
+                        "disease": disease_str,  # Ensure disease is a string
+                        "confidence": float(adjusted_prob),
+                        "matching_symptoms": matching_symptoms,
+                        "symptom_coverage": float(symptom_coverage),
+                        "severity_score": float(severity_score),
+                        "matching_count": matching_count
+                    })
+            except Exception as e:
+                print(f"Error processing disease {disease}: {str(e)}")
+                continue
+        
+        # Sort predictions by severity score and confidence
+        relevant_predictions.sort(key=lambda x: (x["severity_score"], x["confidence"]), reverse=True)
+        
+        # Take top 5 most relevant predictions
+        top_predictions = relevant_predictions[:5]
+        
+        if not top_predictions:
+            # Use pre-computed features for fallback
+            best_matches = []
+            for disease, prob in disease_probs:
+                if prob < 0.1:  # Skip very low probability matches
+                    continue
+                    
+                try:
+                    disease_str = str(disease) if not isinstance(disease, str) else disease
+                    disease_features = disease_features_cache.get(disease_str, np.ones(len(model_symptoms)) / len(model_symptoms))
+                    matching_count = sum(1 for sym, imp in zip(model_symptoms, disease_features) 
+                                      if imp > 0.01 and sym in valid_symptoms)
+                    
+                    if matching_count > 0:
+                        best_matches.append((disease_str, prob, matching_count))
+                except Exception as e:
+                    continue
+            
+            if best_matches:
+                best_matches.sort(key=lambda x: (x[2], x[1]), reverse=True)
+                best_disease = best_matches[0]
+                top_predictions = [{
+                    "disease": best_disease[0],
+                    "confidence": float(best_disease[1]),
+                    "matching_symptoms": [{"symptom": s, "importance": 0.01} for s in valid_symptoms],
+                    "symptom_coverage": float(best_disease[2]/len(valid_symptoms)),
+                    "severity_score": float(best_disease[1] * 0.1),
+                    "matching_count": best_disease[2]
+                }]
+            else:
+                top_disease = max(disease_probs, key=lambda x: x[1])
+                disease_str = str(top_disease[0]) if not isinstance(top_disease[0], str) else top_disease[0]
+                top_predictions = [{
+                    "disease": disease_str,
+                    "confidence": float(top_disease[1]),
+                    "matching_symptoms": [],
+                    "symptom_coverage": 0.0,
+                    "severity_score": float(top_disease[1] * 0.1),
+                    "matching_count": 0
+                }]
+
+        # Get recommended doctors (optimized query)
         recommended_doctors = []
         seen_doctors = set()
         
-        # For emergency conditions, prioritize Emergency Medicine and related specialties
-        is_emergency = any(specialty in ['Emergency Medicine', 'Critical Care', 'Toxicologist'] 
-                         for specialty in relevant_specialties)
+        # Prepare specialty lists for all predictions at once
+        all_specialties = set()
+        for pred in top_predictions:
+            try:
+                all_specialties.update(get_relevant_specialties(pred["disease"]))
+            except Exception as e:
+                print(f"Error getting specialties for {pred['disease']}: {str(e)}")
+                # Add default specialties
+                all_specialties.update(['Internal Medicine', 'Family Medicine', 'General Practice'])
         
-        # First, try to get doctors for each specialty in order of relevance
-        for specialty in relevant_specialties:
-            if len(recommended_doctors) >= 6:
-                break
+        if is_mental_health:
+            all_specialties.update(['psychiatrist', 'psychologist', 'mental health specialist'])
+        
+        # Batch query for doctors
+        specialty_doctors = (
+            db.query(models.Doctor)
+            .filter(func.lower(models.Doctor.specialization).in_([s.lower() for s in all_specialties]))
+            .order_by(models.Doctor.rating.desc())
+            .limit(8)
+            .all()
+        )
+        
+        # Process doctors
+        for doctor in specialty_doctors:
+            if doctor.id not in seen_doctors:
+                doctor_dict = doctor.__dict__
+                doctor_dict["specialty_relevance"] = 1.0
+                recommended_doctors.append(doctor_dict)
+                seen_doctors.add(doctor.id)
                 
-            specialty_doctors = (
-                db.query(models.Doctor)
-                .filter(func.lower(models.Doctor.specialization) == specialty.lower())
-                .order_by(models.Doctor.rating.desc())
-                .all()
-            )
-            
-            # Add up to 2 doctors from each specialty
-            count = 0
-            for doctor in specialty_doctors:
-                if doctor.id not in seen_doctors and count < 2:
-                    recommended_doctors.append(doctor)
-                    seen_doctors.add(doctor.id)
-                    count += 1
-                    
-                if len(recommended_doctors) >= 6:
+                if len(recommended_doctors) >= 8:
                     break
         
-        # If we still need more doctors, add highly rated doctors from related specialties
-        if len(recommended_doctors) < 6:
-            # Get all doctors from related specialties that we haven't added yet
-            related_doctors = (
-                db.query(models.Doctor)
-                .filter(
-                    or_(*[
-                        func.lower(models.Doctor.specialization) == specialty.lower()
-                        for specialty in relevant_specialties
-                    ])
-                )
-                .order_by(models.Doctor.rating.desc())
-                .all()
-            )
-            
-            for doctor in related_doctors:
-                if doctor.id not in seen_doctors and len(recommended_doctors) < 6:
-                    recommended_doctors.append(doctor)
-                    seen_doctors.add(doctor.id)
-        
-        # If we still don't have enough specialists, add highly rated general practitioners
+        # If we need more doctors, add general practitioners
         if len(recommended_doctors) < 4:
-            general_doctors = (
+            additional_doctors = (
                 db.query(models.Doctor)
                 .filter(
                     or_(
-                        func.lower(models.Doctor.specialization) == 'internal medicine',
-                        func.lower(models.Doctor.specialization) == 'family medicine',
-                        func.lower(models.Doctor.specialization) == 'general practice'
+                        func.lower(models.Doctor.specialization).in_([
+                            'internal medicine',
+                            'family medicine',
+                            'general practice'
+                        ])
                     )
                 )
                 .order_by(models.Doctor.rating.desc())
-                .limit(6 - len(recommended_doctors))
+                .limit(8 - len(recommended_doctors))
                 .all()
             )
             
-            for doctor in general_doctors:
-                if doctor.id not in seen_doctors and len(recommended_doctors) < 6:
-                    recommended_doctors.append(doctor)
+            for doctor in additional_doctors:
+                if doctor.id not in seen_doctors:
+                    doctor_dict = doctor.__dict__
+                    doctor_dict["specialty_relevance"] = 0.1
+                    recommended_doctors.append(doctor_dict)
                     seen_doctors.add(doctor.id)
         
-        print(f"Found {len(recommended_doctors)} recommended doctors")
-        
-        return {
-            "disease": disease,
-            "confidence": float(max_prob),
-            "recommended_doctors": recommended_doctors
+        # Prepare response
+        response = {
+            "predictions": top_predictions,
+            "recommended_doctors": recommended_doctors,
+            "input_summary": {
+                "valid_symptoms": valid_symptoms,
+                "invalid_symptoms": invalid_symptoms,
+                "total_symptoms_provided": len(symptoms.symptoms),
+                "valid_symptoms_count": len(valid_symptoms)
+            }
         }
+        
+        # Cache the result
+        prediction_cache[cache_key] = response
+        
+        return response
+        
+    except HTTPException as he:
+        raise he
     except Exception as e:
-        print(f"Prediction error: {str(e)}")
-        print(f"Error type: {type(e)}")
-        import traceback
-        print(f"Traceback: {traceback.format_exc()}")
-        raise HTTPException(status_code=500, detail=str(e))
+        print(f"Error in disease prediction: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error predicting disease: {str(e)}"
+        )
 
 # Admin endpoints
 @app.get("/api/admin/doctors")
@@ -386,6 +621,7 @@ async def create_appointment(appointment: schemas.AppointmentCreate, db: Session
         # Create appointment
         db_appointment = models.Appointment(
             doctor_id=appointment.doctorId,
+            user_id=appointment.userId,
             message=appointment.message,
             status='pending'
         )
@@ -395,7 +631,18 @@ async def create_appointment(appointment: schemas.AppointmentCreate, db: Session
             db.commit()
             db.refresh(db_appointment)
             print(f"Appointment created successfully with ID: {db_appointment.id}")
-            return db_appointment
+            
+            # Create response with doctor information
+            appointment_response = {
+                "id": db_appointment.id,
+                "doctor_id": db_appointment.doctor_id,
+                "message": db_appointment.message,
+                "status": db_appointment.status,
+                "created_at": db_appointment.created_at,
+                "doctor": doctor
+            }
+            return appointment_response
+            
         except Exception as db_error:
             db.rollback()
             print(f"Database error: {str(db_error)}")
@@ -417,8 +664,34 @@ async def create_appointment(appointment: schemas.AppointmentCreate, db: Session
 async def get_all_appointments(db: Session = Depends(get_db)):
     try:
         appointments = db.query(models.Appointment).order_by(models.Appointment.created_at.desc()).all()
-        return appointments
+        
+        # Fetch doctor and user information for each appointment
+        appointments_with_details = []
+        for appointment in appointments:
+            doctor = db.query(models.Doctor).filter(models.Doctor.id == appointment.doctor_id).first()
+            user = db.query(models.User).filter(models.User.id == appointment.user_id).first()
+            
+            if doctor and user:
+                appointment_dict = {
+                    "id": appointment.id,
+                    "doctor_id": appointment.doctor_id,
+                    "user_id": appointment.user_id,
+                    "message": appointment.message,
+                    "status": appointment.status,
+                    "created_at": appointment.created_at,
+                    "doctor": doctor,
+                    "user": {
+                        "id": user.id,
+                        "username": user.username,
+                        "full_name": user.full_name,
+                        "email": user.email
+                    }
+                }
+                appointments_with_details.append(appointment_dict)
+        
+        return appointments_with_details
     except Exception as e:
+        print(f"Error fetching admin appointments: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.put("/api/admin/appointments/{appointment_id}")
@@ -514,3 +787,66 @@ def search_doctors_by_symptom(query: str, db: Session = Depends(get_db)):
     ).order_by(models.Doctor.rating.desc()).all()
     
     return doctors
+
+@app.get("/api/users/{user_id}/appointments", response_model=List[schemas.AppointmentResponse])
+async def get_user_appointments(user_id: int, db: Session = Depends(get_db)):
+    try:
+        # First verify the user exists
+        user = db.query(models.User).filter(models.User.id == user_id).first()
+        if not user:
+            raise HTTPException(status_code=404, detail=f"User with ID {user_id} not found")
+
+        # Get all appointments for the user
+        appointments = db.query(models.Appointment).filter(
+            models.Appointment.user_id == user_id
+        ).order_by(models.Appointment.created_at.desc()).all()
+        
+        # Fetch doctor and user information for each appointment
+        appointments_with_details = []
+        for appointment in appointments:
+            try:
+                doctor = db.query(models.Doctor).filter(models.Doctor.id == appointment.doctor_id).first()
+                if not doctor:
+                    print(f"Warning: Doctor with ID {appointment.doctor_id} not found for appointment {appointment.id}")
+                    continue
+                
+                appointment_dict = {
+                    "id": appointment.id,
+                    "doctor_id": appointment.doctor_id,
+                    "user_id": user_id,
+                    "message": appointment.message,
+                    "status": appointment.status,
+                    "created_at": appointment.created_at,
+                    "doctor": doctor,
+                    "user": {
+                        "id": user.id,
+                        "username": user.username,
+                        "full_name": user.full_name,
+                        "email": user.email
+                    }
+                }
+                appointments_with_details.append(appointment_dict)
+            except Exception as detail_error:
+                print(f"Error processing appointment {appointment.id}: {str(detail_error)}")
+                continue
+        
+        return appointments_with_details
+    except HTTPException as he:
+        raise he
+    except Exception as e:
+        print(f"Error fetching appointments: {str(e)}")
+        db.rollback()  # Explicitly rollback on error
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error fetching appointments: {str(e)}"
+        )
+
+@app.get("/api/doctors/{doctor_id}", response_model=schemas.DoctorResponse)
+async def get_doctor(doctor_id: int, db: Session = Depends(get_db)):
+    try:
+        doctor = db.query(models.Doctor).filter(models.Doctor.id == doctor_id).first()
+        if not doctor:
+            raise HTTPException(status_code=404, detail="Doctor not found")
+        return doctor
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

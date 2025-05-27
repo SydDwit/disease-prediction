@@ -7,6 +7,7 @@ const Register = () => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
+    full_name: '',
     password: '',
     confirmPassword: '',
     gender: '',
@@ -38,6 +39,7 @@ const Register = () => {
         body: JSON.stringify({
           username: formData.username,
           email: formData.email,
+          full_name: formData.full_name,
           password: formData.password,
           gender: formData.gender,
         }),
@@ -78,6 +80,21 @@ const Register = () => {
                 id="username"
                 name="username"
                 value={formData.username}
+                onChange={handleChange}
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="full_name" className="block text-sm font-medium text-gray-700">
+                Full Name
+              </label>
+              <input
+                type="text"
+                id="full_name"
+                name="full_name"
+                value={formData.full_name}
                 onChange={handleChange}
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 required

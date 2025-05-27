@@ -22,7 +22,7 @@ const DoctorCard = ({ doctor }) => {
         <p className="text-sm text-gray-600">{doctor.specialization}</p>
         <p className="text-sm text-gray-600">{doctor.hospital}</p>
         <div className="mt-2 text-sm">
-          <p>Experience: {doctor.experience} years</p>
+          {/* <p>Experience: {doctor.experience} years</p> */}
           <div className="flex items-center mt-1">
             <span className="text-yellow-500">★</span>
             <span className="ml-1">{doctor.rating}/5</span>
@@ -55,10 +55,10 @@ const DoctorCard = ({ doctor }) => {
                 <p className="text-gray-600">{doctor.hospital}</p>
               </div>
               
-              <div>
+              {/* <div>
                 <h4 className="font-medium">Experience</h4>
                 <p className="text-gray-600">{doctor.experience} years</p>
-              </div>
+              </div> */}
               
               <div>
                 <h4 className="font-medium">Rating</h4>

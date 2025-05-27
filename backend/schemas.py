@@ -5,6 +5,7 @@ from typing import Optional, Literal, List
 class UserBase(BaseModel):
     username: constr(min_length=3, max_length=50)
     email: EmailStr
+    full_name: constr(min_length=2, max_length=255)
 
 class UserCreate(UserBase):
     password: constr(min_length=6, max_length=100)
@@ -29,6 +30,8 @@ class LoginResponse(BaseModel):
     status: str
     username: str
     is_admin: bool
+    user_id: int
+    full_name: str
 
 class SymptomsInput(BaseModel):
     symptoms: List[str]
@@ -44,10 +47,28 @@ class DoctorResponse(BaseModel):
     class Config:
         from_attributes = True
 
-class PredictionResponse(BaseModel):
+class MatchingSymptom(BaseModel):
+    symptom: str
+    importance: float
+
+class DiseasePrediction(BaseModel):
     disease: str
     confidence: float
+    matching_symptoms: List[MatchingSymptom]
+    symptom_coverage: float
+    severity_score: float
+    matching_count: int
+
+class InputSummary(BaseModel):
+    valid_symptoms: List[str]
+    invalid_symptoms: List[str]
+    total_symptoms_provided: int
+    valid_symptoms_count: int
+
+class PredictionResponse(BaseModel):
+    predictions: List[DiseasePrediction]
     recommended_doctors: List[DoctorResponse]
+    input_summary: InputSummary
 
 class DoctorBase(BaseModel):
     name: str
@@ -81,14 +102,27 @@ class MessageResponse(BaseModel):
 
 class AppointmentCreate(BaseModel):
     doctorId: int
+    userId: int
     message: str
+
+class AppointmentUserInfo(BaseModel):
+    id: int
+    username: str
+    full_name: str
+    email: str
+
+    class Config:
+        from_attributes = True
 
 class AppointmentResponse(BaseModel):
     id: int
     doctor_id: int
+    user_id: int
     message: str
     status: str
     created_at: datetime
+    doctor: DoctorResponse
+    user: AppointmentUserInfo
 
     class Config:
         from_attributes = True

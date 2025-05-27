@@ -5,74 +5,65 @@ These mappings are based on general medical knowledge and common practices.
 
 DISEASE_TO_SPECIALTY = {
     # Neurological diseases
-    'wernicke korsakoff syndrome': ['Neurologist', 'Psychiatrist'],
-    'brain cancer': ['Neurosurgeon', 'Neuro-oncologist'],
-    'alzheimer disease': ['Neurologist', 'Geriatrician'],
-    'amyotrophic lateral sclerosis (als)': ['Neurologist'],
-    'carpal tunnel syndrome': ['Orthopedist', 'Hand Surgeon'],
-    'multiple sclerosis': ['Neurologist', 'Immunologist'],
-    'parkinsons disease': ['Neurologist', 'Movement Disorder Specialist'],
-    'epilepsy': ['Neurologist'],
+    '(vertigo) paroymsal positional vertigo': ['Neurologist', 'ENT'],
     'migraine': ['Neurologist', 'Internal Medicine'],
-    'stroke': ['Neurologist', 'Vascular Neurologist'],
+    'paralysis (brain hemorrhage)': ['Neurologist', 'Neurosurgeon'],
+    'cervical spondylosis': ['Neurologist', 'Orthopedist'],
+    
+    # Infectious diseases
+    'aids': ['Infectious Disease', 'Immunologist'],
+    'chicken pox': ['Infectious Disease', 'Dermatologist'],
+    'dengue': ['Infectious Disease', 'Internal Medicine'],
+    'typhoid': ['Infectious Disease', 'Gastroenterologist'],
+    'hepatitis a': ['Gastroenterologist', 'Hepatologist', 'Infectious Disease'],
+    'hepatitis b': ['Gastroenterologist', 'Hepatologist', 'Infectious Disease'],
+    'hepatitis c': ['Gastroenterologist', 'Hepatologist', 'Infectious Disease'],
+    'hepatitis d': ['Gastroenterologist', 'Hepatologist', 'Infectious Disease'],
+    'hepatitis e': ['Gastroenterologist', 'Hepatologist', 'Infectious Disease'],
+    'tuberculosis': ['Pulmonologist', 'Infectious Disease'],
+    'common cold': ['General Practitioner', 'ENT'],
+    'pneumonia': ['Pulmonologist', 'Infectious Disease'],
+    'malaria': ['Infectious Disease', 'Internal Medicine'],
+    'impetigo': ['Dermatologist', 'Infectious Disease'],
+    
+    # Dermatological conditions
+    'acne': ['Dermatologist'],
+    'psoriasis': ['Dermatologist', 'Immunologist'],
+    'fungal infection': ['Dermatologist', 'Infectious Disease'],
     
     # Gastrointestinal diseases
-    'crohn disease': ['Gastroenterologist', 'Colorectal Surgeon'],
-    'ulcerative colitis': ['Gastroenterologist', 'Colorectal Surgeon'],
-    'celiac disease': ['Gastroenterologist', 'Immunologist'],
-    'cirrhosis': ['Gastroenterologist', 'Hepatologist'],
-    'hepatitis': ['Gastroenterologist', 'Hepatologist', 'Infectious Disease'],
+    'alcoholic hepatitis': ['Gastroenterologist', 'Hepatologist'],
+    'jaundice': ['Gastroenterologist', 'Hepatologist'],
+    'chronic cholestasis': ['Gastroenterologist', 'Hepatologist'],
+    'peptic ulcer diseae': ['Gastroenterologist'],
+    'gastroenteritis': ['Gastroenterologist', 'Infectious Disease'],
+    'gerd': ['Gastroenterologist'],
+    'dimorphic hemmorhoids(piles)': ['Gastroenterologist', 'Colorectal Surgeon'],
     
     # Cardiovascular diseases
-    'heart disease': ['Cardiologist', 'Internal Medicine'],
     'heart attack': ['Cardiologist', 'Emergency Medicine'],
-    'heart failure': ['Cardiologist', 'Internal Medicine'],
-    'high blood pressure': ['Cardiologist', 'Internal Medicine'],
-    'arrhythmia': ['Cardiologist', 'Electrophysiologist'],
+    'varicose veins': ['Vascular Surgeon', 'Cardiologist'],
+    'hypertension': ['Cardiologist', 'Internal Medicine'],
     
     # Respiratory diseases
-    'asthma': ['Pulmonologist', 'Allergist'],
-    'copd': ['Pulmonologist', 'Internal Medicine'],
-    'lung cancer': ['Pulmonologist', 'Oncologist', 'Thoracic Surgeon'],
-    'pneumonia': ['Pulmonologist', 'Infectious Disease'],
-    'tuberculosis': ['Pulmonologist', 'Infectious Disease'],
+    'bronchial asthma': ['Pulmonologist', 'Allergist'],
     
     # Endocrine diseases
     'diabetes': ['Endocrinologist'],
-    'thyroid disease': ['Endocrinologist'],
-    'cushing syndrome': ['Endocrinologist'],
-    'addisons disease': ['Endocrinologist'],
+    'hyperthyroidism': ['Endocrinologist'],
+    'hypothyroidism': ['Endocrinologist'],
+    'hypoglycemia': ['Endocrinologist'],
     
-    # Mental health conditions
-    'depression': ['Psychiatrist', 'Psychologist'],
-    'anxiety': ['Psychiatrist', 'Psychologist'],
-    'bipolar disorder': ['Psychiatrist'],
-    'schizophrenia': ['Psychiatrist'],
-    'mental disorder': ['Psychiatrist', 'Psychologist'],
+    # Allergic conditions
+    'allergy': ['Allergist', 'Immunologist'],
+    'drug reaction': ['Allergist', 'Dermatologist'],
     
-    # Emergency conditions
-    'heart attack': ['Emergency Medicine', 'Cardiologist'],
-    'stroke': ['Emergency Medicine', 'Neurologist'],
-    'severe trauma': ['Emergency Medicine', 'Trauma Surgeon'],
-    'sepsis': ['Emergency Medicine', 'Critical Care', 'Infectious Disease'],
-    
-    # Add specific mappings for commonly predicted diseases
-    'salivary gland disorder': ['ENT, Oral & Maxillofacial Surgeon'],
-    'poisoning': ['Emergency Medicine', 'Toxicologist'],
-    'poisoning due to anticonvulsants': ['Emergency Medicine', 'Toxicologist', 'Neurologist'],
-    'drug poisoning': ['Emergency Medicine', 'Toxicologist'],
-    
-    # Respiratory conditions
-    'cough': ['Pulmonologist', 'Internal Medicine', 'ENT'],
-    'respiratory infection': ['Pulmonologist', 'Infectious Disease'],
-    'breathing difficulty': ['Pulmonologist', 'Emergency Medicine'],
+    # Musculoskeletal conditions
+    'arthritis': ['Rheumatologist', 'Orthopedist'],
+    'osteoarthristis': ['Orthopedist', 'Rheumatologist'],
     
     # Urological conditions
-    'erectile dysfunction': ['Urologist', 'Endocrinologist', 'Internal Medicine'],
-    'prostate cancer': ['Urologist', 'Oncologist'],
-    'benign prostatic hyperplasia': ['Urologist'],
     'urinary tract infection': ['Urologist', 'Internal Medicine'],
-    'kidney stones': ['Urologist', 'Nephrologist'],
     
     # Default fallback
     'default': ['Internal Medicine', 'Family Medicine', 'General Practice']
@@ -83,11 +74,15 @@ def get_relevant_specialties(disease):
     Get relevant medical specialties for a given disease.
     
     Args:
-        disease (str): The name of the disease
+        disease (str or int): The name of the disease or disease ID
         
     Returns:
         list: List of relevant medical specialties
     """
+    # Convert to string if it's not already
+    if not isinstance(disease, str):
+        disease = str(disease)
+    
     disease = disease.lower()
     
     # Direct disease lookup
@@ -97,48 +92,71 @@ def get_relevant_specialties(disease):
     # Keyword-based mapping for diseases not directly listed
     keywords_to_specialties = {
         # Neurological keywords
+        'vertigo': ['Neurologist', 'ENT'],
         'brain': ['Neurologist', 'Neurosurgeon'],
         'nerve': ['Neurologist'],
-        'spinal': ['Neurologist', 'Neurosurgeon'],
-        'seizure': ['Neurologist'],
-        'cognitive': ['Neurologist', 'Psychiatrist'],
+        'spinal': ['Neurologist', 'Orthopedist'],
+        'migraine': ['Neurologist'],
+        'paralysis': ['Neurologist', 'Neurosurgeon'],
         
-        # Mental health keywords
-        'mental': ['Psychiatrist', 'Psychologist'],
-        'psychiatric': ['Psychiatrist'],
-        'behavioral': ['Psychiatrist', 'Psychologist'],
-        'mood': ['Psychiatrist'],
-        'depression': ['Psychiatrist', 'Psychologist'],
-        'anxiety': ['Psychiatrist', 'Psychologist'],
+        # Infectious disease keywords
+        'infection': ['Infectious Disease'],
+        'viral': ['Infectious Disease'],
+        'bacterial': ['Infectious Disease'],
+        'hepatitis': ['Gastroenterologist', 'Hepatologist'],
+        'malaria': ['Infectious Disease'],
+        'dengue': ['Infectious Disease'],
+        'tuberculosis': ['Pulmonologist', 'Infectious Disease'],
+        
+        # Skin keywords
+        'skin': ['Dermatologist'],
+        'acne': ['Dermatologist'],
+        'rash': ['Dermatologist', 'Allergist'],
+        'psoriasis': ['Dermatologist'],
+        'fungal': ['Dermatologist', 'Infectious Disease'],
+        
+        # Gastrointestinal keywords
+        'liver': ['Gastroenterologist', 'Hepatologist'],
+        'stomach': ['Gastroenterologist'],
+        'intestine': ['Gastroenterologist'],
+        'ulcer': ['Gastroenterologist'],
+        'jaundice': ['Gastroenterologist', 'Hepatologist'],
+        'hepatitis': ['Gastroenterologist', 'Hepatologist'],
+        'cholestasis': ['Gastroenterologist'],
+        'gastritis': ['Gastroenterologist'],
+        'piles': ['Gastroenterologist', 'Colorectal Surgeon'],
+        
+        # Cardiovascular keywords
+        'heart': ['Cardiologist'],
+        'vein': ['Vascular Surgeon', 'Cardiologist'],
+        'artery': ['Cardiologist', 'Vascular Surgeon'],
+        'hypertension': ['Cardiologist', 'Internal Medicine'],
         
         # Respiratory keywords
-        'cough': ['Pulmonologist', 'Internal Medicine'],
+        'lung': ['Pulmonologist'],
+        'asthma': ['Pulmonologist', 'Allergist'],
         'respiratory': ['Pulmonologist'],
-        'breathing': ['Pulmonologist'],
-        'airway': ['Pulmonologist', 'ENT'],
+        'pneumonia': ['Pulmonologist', 'Infectious Disease'],
         
-        # Emergency and toxicology keywords
-        'poisoning': ['Emergency Medicine', 'Toxicologist'],
-        'overdose': ['Emergency Medicine', 'Toxicologist'],
-        'toxic': ['Emergency Medicine', 'Toxicologist'],
+        # Endocrine keywords
+        'diabetes': ['Endocrinologist'],
+        'thyroid': ['Endocrinologist'],
+        'hormone': ['Endocrinologist'],
+        'glucose': ['Endocrinologist'],
         
-        # Salivary and oral keywords
-        'salivary': ['ENT', 'Oral & Maxillofacial Surgeon'],
-        'gland': ['ENT', 'Endocrinologist'],
-        'oral': ['ENT', 'Oral & Maxillofacial Surgeon'],
+        # Allergic keywords
+        'allergy': ['Allergist', 'Immunologist'],
+        'immune': ['Immunologist', 'Allergist'],
         
-        # Default keywords
-        'general': ['Internal Medicine', 'Family Medicine'],
-        'chronic': ['Internal Medicine', 'Family Medicine'],
-        'primary': ['Internal Medicine', 'Family Medicine'],
+        # Musculoskeletal keywords
+        'joint': ['Orthopedist', 'Rheumatologist'],
+        'bone': ['Orthopedist'],
+        'arthritis': ['Rheumatologist', 'Orthopedist'],
         
         # Urological keywords
-        'erectile': ['Urologist', 'Endocrinologist'],
-        'prostate': ['Urologist', 'Oncologist'],
-        'urinary': ['Urologist', 'Nephrologist'],
+        'urinary': ['Urologist'],
         'bladder': ['Urologist'],
-        'kidney': ['Urologist', 'Nephrologist'],
-        'testicular': ['Urologist'],
+        'kidney': ['Nephrologist', 'Urologist'],
     }
     
     # Check for keyword matches

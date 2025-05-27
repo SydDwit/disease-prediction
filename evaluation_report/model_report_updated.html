@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction Model Evaluation Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .metrics-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .metric-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .metric-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .metric-value {
+            font-size: 32px;
+            color: #3498db;
+            margin: 10px 0;
+        }
+        .visualization {
+            margin: 30px 0;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .description {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            z-index: 100;
+        }
+        .nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .nav li {
+            margin-right: 20px;
+        }
+        .nav a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Disease Prediction Model Evaluation Report</h1>
+        <p>Comprehensive evaluation of the disease prediction model performance</p>
+    </header>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="#accuracy">Accuracy</a></li>
+            <li><a href="#confusion-matrix">Confusion Matrix</a></li>
+            <li><a href="#classification-metrics">Classification Metrics</a></li>
+            <li><a href="#normal-distribution">Normal Distribution</a></li>
+            <li><a href="#disease-confidence">Disease Confidence</a></li>
+            <li><a href="#feature-importance">Feature Importance</a></li>
+            <li><a href="#correlation">Symptom-Disease Correlation</a></li>
+        </ul>
+    </div>
+
+    <section id="accuracy">
+        <h2>Model Accuracy</h2>
+        <div class="description">
+            This section shows the overall accuracy of the model on both training and testing datasets. The model demonstrates high accuracy in classifying diseases based on symptoms.
+        </div>
+        <div class="visualization">
+            <img src="accuracy.png" alt="Model Accuracy">
+        </div>
+    </section>
+
+    <section id="confusion-matrix">
+        <h2>Confusion Matrix</h2>
+        <div class="description">
+            The confusion matrix visualizes how well the model predicts each disease class. The diagonal elements represent the number of points for which the predicted label is equal to the true label. Off-diagonal elements are those that are mislabeled by the classifier.
+        </div>
+        <div class="visualization">
+            <img src="generic_confusion_matrix.png" alt="Confusion Matrix">
+        </div>
+    </section>
+
+    <section id="classification-metrics">
+        <h2>Classification Metrics</h2>
+        <div class="description">
+            This visualization shows the precision, recall, and F1-score metrics for the model. These metrics provide insights into the model's ability to correctly identify true positives while minimizing false positives and false negatives.
+        </div>
+        <div class="visualization">
+            <img src="classification_metrics.png" alt="Classification Metrics">
+        </div>
+    </section>
+    
+    <section id="normal-distribution">
+        <h2>Normal Distribution of Prediction Confidence</h2>
+        <div class="description">
+            This visualization shows the normal distribution of prediction confidence across all diseases. The red curve represents the theoretical normal distribution, with shaded areas indicating one and two standard deviations from the mean (capturing 68% and 95% of the data respectively).
+        </div>
+        <div class="visualization">
+            <img src="normal_distribution.png" alt="Normal Distribution of Prediction Confidence">
+        </div>
+    </section>
+
+    <section id="disease-confidence">
+        <h2>Disease Confidence Levels</h2>
+        <div class="description">
+            This chart shows confidence levels for the top 15 diseases in the model. Higher values indicate greater prediction accuracy for that particular disease, while the red vertical line represents the mean confidence across all diseases.
+        </div>
+        <div class="visualization">
+            <img src="disease_confidence.png" alt="Disease Confidence Levels">
+        </div>
+    </section>
+
+    <section id="feature-importance">
+        <h2>Feature Importance</h2>
+        <div class="description">
+            This chart shows the most important symptoms used by the model to make predictions. Higher importance scores indicate symptoms that have greater influence on the model's decision-making process.
+        </div>
+        <div class="visualization">
+            <img src="feature_importance.png" alt="Feature Importance">
+        </div>
+    </section>
+
+    <section id="correlation">
+        <h2>Symptom-Disease Correlation</h2>
+        <div class="description">
+            This heatmap shows the correlation between symptoms and diseases in the dataset. Brighter colors indicate stronger correlations, helping identify which symptoms are most strongly associated with specific diseases.
+        </div>
+        <div class="visualization">
+            <img src="correlation.png" alt="Symptom-Disease Correlation">
+        </div>
+    </section>
+
+    <footer>
+        <p>Disease Prediction Model Evaluation • Generated on <script>document.write(new Date().toLocaleDateString())</script></p>
+    </footer>
+</body>
+</html> 

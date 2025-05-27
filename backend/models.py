@@ -18,6 +18,7 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String(50), unique=True, nullable=False, index=True)
     email = Column(String(100), unique=True, nullable=False, index=True)
+    full_name = Column(String(255), nullable=False)
     password = Column(String(255), nullable=False)
     gender = Column(Enum('male', 'female', 'other'), nullable=False)
     is_admin = Column(Boolean, default=False, nullable=False)
@@ -51,6 +52,7 @@ class Appointment(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     doctor_id = Column(Integer, ForeignKey('doctors.id', ondelete='CASCADE'), nullable=False)
+    user_id = Column(Integer, ForeignKey('users.id', ondelete='CASCADE'), nullable=False)
     message = Column(Text, nullable=False)
     status = Column(String(20), server_default='pending', nullable=False)
     created_at = Column(DateTime, server_default=func.now())

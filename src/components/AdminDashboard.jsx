@@ -165,6 +165,7 @@ const AdminDashboard = () => {
                   <thead>
                     <tr>
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Patient</th>
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Doctor</th>
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Message</th>
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
@@ -174,54 +175,64 @@ const AdminDashboard = () => {
                   <tbody className="bg-white divide-y divide-gray-200">
                     {appointments.length === 0 ? (
                       <tr>
-                        <td colSpan="5" className="px-6 py-4 text-center text-gray-500">
+                        <td colSpan="6" className="px-6 py-4 text-center text-gray-500">
                           No appointment requests found
                         </td>
                       </tr>
                     ) : (
-                      appointments.map(appointment => {
-                        const doctor = doctors.find(d => d.id === appointment.doctor_id);
-                        return (
-                          <tr key={appointment.id}>
-                            <td className="px-6 py-4 whitespace-nowrap">
-                              {new Date(appointment.created_at).toLocaleDateString()}
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap">
-                              {doctor ? doctor.name : 'Unknown Doctor'}
-                            </td>
-                            <td className="px-6 py-4">
-                              <p className="text-gray-900">{appointment.message}</p>
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap">
-                              <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
-                                appointment.status === 'approved' ? 'bg-green-100 text-green-800' :
-                                appointment.status === 'rejected' ? 'bg-red-100 text-red-800' :
-                                'bg-yellow-100 text-yellow-800'
-                              }`}>
-                                {appointment.status}
-                              </span>
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap">
-                              {appointment.status === 'pending' && (
-                                <div className="space-x-2">
-                                  <button
-                                    onClick={() => handleAppointmentStatus(appointment.id, 'approved')}
-                                    className="text-green-600 hover:text-green-800"
-                                  >
-                                    Approve
-                                  </button>
-                                  <button
-                                    onClick={() => handleAppointmentStatus(appointment.id, 'rejected')}
-                                    className="text-red-600 hover:text-red-800"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              )}
-                            </td>
-                          </tr>
-                        );
-                      })
+                      appointments.map(appointment => (
+                        <tr key={appointment.id}>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            {new Date(appointment.created_at).toLocaleDateString()}
+                          </td>
+                          <td className="px-6 py-4">
+                            <div className="text-sm">
+                              <p className="font-medium text-gray-900">{appointment.user.full_name}</p>
+                              <p className="text-gray-500">{appointment.user.email}</p>
+                            </div>
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            {appointment.doctor ? (
+                              <div className="text-sm">
+                                <p className="font-medium text-gray-900">{appointment.doctor.name}</p>
+                                <p className="text-gray-500">{appointment.doctor.specialization}</p>
+                              </div>
+                            ) : (
+                              'Unknown Doctor'
+                            )}
+                          </td>
+                          <td className="px-6 py-4">
+                            <p className="text-gray-900">{appointment.message}</p>
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                              appointment.status === 'approved' ? 'bg-green-100 text-green-800' :
+                              appointment.status === 'rejected' ? 'bg-red-100 text-red-800' :
+                              'bg-yellow-100 text-yellow-800'
+                            }`}>
+                              {appointment.status}
+                            </span>
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium space-x-2">
+                            {appointment.status === 'pending' && (
+                              <>
+                                <button
+                                  onClick={() => handleAppointmentStatus(appointment.id, 'approved')}
+                                  className="text-green-600 hover:text-green-900"
+                                >
+                                  Approve
+                                </button>
+                                <button
+                                  onClick={() => handleAppointmentStatus(appointment.id, 'rejected')}
+                                  className="text-red-600 hover:text-red-900"
+                                >
+                                  Reject
+                                </button>
+                              </>
+                            )}
+                          </td>
+                        </tr>
+                      ))
                     )}
                   </tbody>
                 </table>

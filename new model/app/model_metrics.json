@@ -1,0 +1,1081 @@
+{
+  "train_acc": 1.0,
+  "test_acc": 1.0,
+  "disease_metrics": {
+    "(vertigo) Paroymsal  Positional Vertigo": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "loss_of_balance",
+          "importance": 0.95
+        },
+        {
+          "symptom": "unsteadiness",
+          "importance": 0.95
+        },
+        {
+          "symptom": "headache",
+          "importance": 0.95
+        },
+        {
+          "symptom": "nausea",
+          "importance": 0.95
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.95
+        }
+      ]
+    },
+    "AIDS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "high_fever",
+          "importance": 0.95
+        },
+        {
+          "symptom": "extra_marital_contacts",
+          "importance": 0.9
+        },
+        {
+          "symptom": "patches_in_throat",
+          "importance": 0.9
+        },
+        {
+          "symptom": "muscle_wasting",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Acne": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "skin_rash",
+          "importance": 0.95
+        },
+        {
+          "symptom": "scurring",
+          "importance": 0.9
+        },
+        {
+          "symptom": "pus_filled_pimples",
+          "importance": 0.9
+        },
+        {
+          "symptom": "blackheads",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Alcoholic hepatitis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "fluid_overload.1",
+          "importance": 0.95
+        },
+        {
+          "symptom": "abdominal_pain",
+          "importance": 0.95
+        },
+        {
+          "symptom": "swelling_of_stomach",
+          "importance": 0.95
+        },
+        {
+          "symptom": "yellowish_skin",
+          "importance": 0.95
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Allergy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "shivering",
+          "importance": 0.9
+        },
+        {
+          "symptom": "continuous_sneezing",
+          "importance": 0.9
+        },
+        {
+          "symptom": "chills",
+          "importance": 0.9
+        },
+        {
+          "symptom": "watering_from_eyes",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Arthritis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "stiff_neck",
+          "importance": 0.95
+        },
+        {
+          "symptom": "painful_walking",
+          "importance": 0.95
+        },
+        {
+          "symptom": "swelling_joints",
+          "importance": 0.95
+        },
+        {
+          "symptom": "movement_stiffness",
+          "importance": 0.95
+        },
+        {
+          "symptom": "muscle_weakness",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Bronchial Asthma": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "high_fever",
+          "importance": 0.95
+        },
+        {
+          "symptom": "family_history",
+          "importance": 0.95
+        },
+        {
+          "symptom": "mucoid_sputum",
+          "importance": 0.95
+        },
+        {
+          "symptom": "breathlessness",
+          "importance": 0.95
+        },
+        {
+          "symptom": "fatigue",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Cervical spondylosis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "neck_pain",
+          "importance": 0.95
+        },
+        {
+          "symptom": "dizziness",
+          "importance": 0.95
+        },
+        {
+          "symptom": "loss_of_balance",
+          "importance": 0.95
+        },
+        {
+          "symptom": "weakness_in_limbs",
+          "importance": 0.9
+        },
+        {
+          "symptom": "back_pain",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Chicken pox": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "malaise",
+          "importance": 1.0
+        },
+        {
+          "symptom": "red_spots_over_body",
+          "importance": 1.0
+        },
+        {
+          "symptom": "high_fever",
+          "importance": 0.95
+        },
+        {
+          "symptom": "skin_rash",
+          "importance": 0.95
+        },
+        {
+          "symptom": "itching",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Chronic cholestasis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "itching",
+          "importance": 0.95
+        },
+        {
+          "symptom": "nausea",
+          "importance": 0.95
+        },
+        {
+          "symptom": "loss_of_appetite",
+          "importance": 0.95
+        },
+        {
+          "symptom": "yellowish_skin",
+          "importance": 0.95
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Common Cold": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "phlegm",
+          "importance": 1.0
+        },
+        {
+          "symptom": "chest_pain",
+          "importance": 1.0
+        },
+        {
+          "symptom": "congestion",
+          "importance": 1.0
+        },
+        {
+          "symptom": "runny_nose",
+          "importance": 1.0
+        },
+        {
+          "symptom": "sinus_pressure",
+          "importance": 1.0
+        }
+      ]
+    },
+    "Dengue": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "back_pain",
+          "importance": 1.0
+        },
+        {
+          "symptom": "nausea",
+          "importance": 1.0
+        },
+        {
+          "symptom": "loss_of_appetite",
+          "importance": 1.0
+        },
+        {
+          "symptom": "pain_behind_the_eyes",
+          "importance": 1.0
+        },
+        {
+          "symptom": "headache",
+          "importance": 1.0
+        }
+      ]
+    },
+    "Diabetes ": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "increased_appetite",
+          "importance": 1.0
+        },
+        {
+          "symptom": "polyuria",
+          "importance": 1.0
+        },
+        {
+          "symptom": "restlessness",
+          "importance": 0.95
+        },
+        {
+          "symptom": "weight_loss",
+          "importance": 0.95
+        },
+        {
+          "symptom": "irregular_sugar_level",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Dimorphic hemmorhoids(piles)": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "constipation",
+          "importance": 0.95
+        },
+        {
+          "symptom": "bloody_stool",
+          "importance": 0.95
+        },
+        {
+          "symptom": "irritation_in_anus",
+          "importance": 0.95
+        },
+        {
+          "symptom": "pain_in_anal_region",
+          "importance": 0.95
+        },
+        {
+          "symptom": "pain_during_bowel_movements",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Drug Reaction": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "itching",
+          "importance": 0.95
+        },
+        {
+          "symptom": "skin_rash",
+          "importance": 0.9
+        },
+        {
+          "symptom": "spotting_ urination",
+          "importance": 0.9
+        },
+        {
+          "symptom": "burning_micturition",
+          "importance": 0.9
+        },
+        {
+          "symptom": "stomach_pain",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Fungal infection": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "itching",
+          "importance": 0.9
+        },
+        {
+          "symptom": "skin_rash",
+          "importance": 0.9
+        },
+        {
+          "symptom": "nodal_skin_eruptions",
+          "importance": 0.9
+        },
+        {
+          "symptom": "dischromic _patches",
+          "importance": 0.9
+        }
+      ]
+    },
+    "GERD": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "stomach_pain",
+          "importance": 0.95
+        },
+        {
+          "symptom": "cough",
+          "importance": 0.95
+        },
+        {
+          "symptom": "chest_pain",
+          "importance": 0.95
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.9
+        },
+        {
+          "symptom": "ulcers_on_tongue",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Gastroenteritis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "diarrhoea",
+          "importance": 0.95
+        },
+        {
+          "symptom": "sunken_eyes",
+          "importance": 0.9
+        },
+        {
+          "symptom": "dehydration",
+          "importance": 0.9
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Heart attack": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "chest_pain",
+          "importance": 0.95
+        },
+        {
+          "symptom": "breathlessness",
+          "importance": 0.9
+        },
+        {
+          "symptom": "sweating",
+          "importance": 0.9
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Hepatitis B": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "malaise",
+          "importance": 1.0
+        },
+        {
+          "symptom": "receiving_unsterile_injections",
+          "importance": 1.0
+        },
+        {
+          "symptom": "receiving_blood_transfusion",
+          "importance": 1.0
+        },
+        {
+          "symptom": "yellowing_of_eyes",
+          "importance": 1.0
+        },
+        {
+          "symptom": "itching",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Hepatitis C": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "family_history",
+          "importance": 0.95
+        },
+        {
+          "symptom": "nausea",
+          "importance": 0.95
+        },
+        {
+          "symptom": "loss_of_appetite",
+          "importance": 0.95
+        },
+        {
+          "symptom": "yellowish_skin",
+          "importance": 0.95
+        },
+        {
+          "symptom": "fatigue",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Hepatitis D": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "yellowish_skin",
+          "importance": 0.95
+        },
+        {
+          "symptom": "dark_urine",
+          "importance": 0.95
+        },
+        {
+          "symptom": "fatigue",
+          "importance": 0.95
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.95
+        },
+        {
+          "symptom": "joint_pain",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Hepatitis E": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "coma",
+          "importance": 1.0
+        },
+        {
+          "symptom": "stomach_bleeding",
+          "importance": 1.0
+        },
+        {
+          "symptom": "yellowing_of_eyes",
+          "importance": 1.0
+        },
+        {
+          "symptom": "abdominal_pain",
+          "importance": 1.0
+        },
+        {
+          "symptom": "loss_of_appetite",
+          "importance": 1.0
+        }
+      ]
+    },
+    "Hypertension ": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "lack_of_concentration",
+          "importance": 0.95
+        },
+        {
+          "symptom": "loss_of_balance",
+          "importance": 0.95
+        },
+        {
+          "symptom": "headache",
+          "importance": 0.9
+        },
+        {
+          "symptom": "dizziness",
+          "importance": 0.9
+        },
+        {
+          "symptom": "chest_pain",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Hyperthyroidism": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "irritability",
+          "importance": 1.0
+        },
+        {
+          "symptom": "abnormal_menstruation",
+          "importance": 1.0
+        },
+        {
+          "symptom": "muscle_weakness",
+          "importance": 1.0
+        },
+        {
+          "symptom": "mood_swings",
+          "importance": 0.95
+        },
+        {
+          "symptom": "sweating",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Hypoglycemia": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "palpitations",
+          "importance": 1.0
+        },
+        {
+          "symptom": "excessive_hunger",
+          "importance": 1.0
+        },
+        {
+          "symptom": "slurred_speech",
+          "importance": 1.0
+        },
+        {
+          "symptom": "irritability",
+          "importance": 1.0
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Hypothyroidism": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "enlarged_thyroid",
+          "importance": 1.0
+        },
+        {
+          "symptom": "irritability",
+          "importance": 1.0
+        },
+        {
+          "symptom": "abnormal_menstruation",
+          "importance": 1.0
+        },
+        {
+          "symptom": "swollen_extremeties",
+          "importance": 1.0
+        },
+        {
+          "symptom": "depression",
+          "importance": 1.0
+        }
+      ]
+    },
+    "Impetigo": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "skin_rash",
+          "importance": 0.95
+        },
+        {
+          "symptom": "blister",
+          "importance": 0.95
+        },
+        {
+          "symptom": "red_sore_around_nose",
+          "importance": 0.95
+        },
+        {
+          "symptom": "yellow_crust_ooze",
+          "importance": 0.95
+        },
+        {
+          "symptom": "high_fever",
+          "importance": 0.85
+        }
+      ]
+    },
+    "Jaundice": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "itching",
+          "importance": 0.95
+        },
+        {
+          "symptom": "high_fever",
+          "importance": 0.95
+        },
+        {
+          "symptom": "weight_loss",
+          "importance": 0.95
+        },
+        {
+          "symptom": "fatigue",
+          "importance": 0.95
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Malaria": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "muscle_pain",
+          "importance": 1.0
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.95
+        },
+        {
+          "symptom": "high_fever",
+          "importance": 0.95
+        },
+        {
+          "symptom": "chills",
+          "importance": 0.95
+        },
+        {
+          "symptom": "headache",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Migraine": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "depression",
+          "importance": 0.95
+        },
+        {
+          "symptom": "blurred_and_distorted_vision",
+          "importance": 0.95
+        },
+        {
+          "symptom": "indigestion",
+          "importance": 0.95
+        },
+        {
+          "symptom": "headache",
+          "importance": 0.95
+        },
+        {
+          "symptom": "acidity",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Osteoarthristis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "painful_walking",
+          "importance": 0.95
+        },
+        {
+          "symptom": "hip_joint_pain",
+          "importance": 0.95
+        },
+        {
+          "symptom": "swelling_joints",
+          "importance": 0.95
+        },
+        {
+          "symptom": "neck_pain",
+          "importance": 0.95
+        },
+        {
+          "symptom": "joint_pain",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Paralysis (brain hemorrhage)": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "altered_sensorium",
+          "importance": 0.95
+        },
+        {
+          "symptom": "headache",
+          "importance": 0.9
+        },
+        {
+          "symptom": "weakness_of_one_body_side",
+          "importance": 0.9
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Peptic ulcer diseae": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "vomiting",
+          "importance": 0.95
+        },
+        {
+          "symptom": "internal_itching",
+          "importance": 0.95
+        },
+        {
+          "symptom": "passage_of_gases",
+          "importance": 0.95
+        },
+        {
+          "symptom": "abdominal_pain",
+          "importance": 0.95
+        },
+        {
+          "symptom": "indigestion",
+          "importance": 0.9
+        }
+      ]
+    },
+    "Pneumonia": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "chest_pain",
+          "importance": 1.0
+        },
+        {
+          "symptom": "fast_heart_rate",
+          "importance": 1.0
+        },
+        {
+          "symptom": "rusty_sputum",
+          "importance": 1.0
+        },
+        {
+          "symptom": "chills",
+          "importance": 0.95
+        },
+        {
+          "symptom": "high_fever",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Psoriasis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "skin_rash",
+          "importance": 0.95
+        },
+        {
+          "symptom": "inflammatory_nails",
+          "importance": 0.95
+        },
+        {
+          "symptom": "small_dents_in_nails",
+          "importance": 0.95
+        },
+        {
+          "symptom": "silver_like_dusting",
+          "importance": 0.95
+        },
+        {
+          "symptom": "joint_pain",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Tuberculosis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "malaise",
+          "importance": 1.0
+        },
+        {
+          "symptom": "phlegm",
+          "importance": 1.0
+        },
+        {
+          "symptom": "chest_pain",
+          "importance": 1.0
+        },
+        {
+          "symptom": "swelled_lymph_nodes",
+          "importance": 1.0
+        },
+        {
+          "symptom": "loss_of_appetite",
+          "importance": 1.0
+        }
+      ]
+    },
+    "Typhoid": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "chills",
+          "importance": 1.0
+        },
+        {
+          "symptom": "fatigue",
+          "importance": 1.0
+        },
+        {
+          "symptom": "high_fever",
+          "importance": 1.0
+        },
+        {
+          "symptom": "vomiting",
+          "importance": 0.95
+        },
+        {
+          "symptom": "headache",
+          "importance": 0.95
+        }
+      ]
+    },
+    "Urinary tract infection": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "continuous_feel_of_urine",
+          "importance": 0.95
+        },
+        {
+          "symptom": "bladder_discomfort",
+          "importance": 0.95
+        },
+        {
+          "symptom": "burning_micturition",
+          "importance": 0.9
+        },
+        {
+          "symptom": "foul_smell_of urine",
+          "importance": 0.85
+        }
+      ]
+    },
+    "Varicose veins": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "cramps",
+          "importance": 0.95
+        },
+        {
+          "symptom": "swollen_legs",
+          "importance": 0.95
+        },
+        {
+          "symptom": "obesity",
+          "importance": 0.95
+        },
+        {
+          "symptom": "bruising",
+          "importance": 0.95
+        },
+        {
+          "symptom": "fatigue",
+          "importance": 0.95
+        }
+      ]
+    },
+    "hepatitis A": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "top_symptoms": [
+        {
+          "symptom": "mild_fever",
+          "importance": 1.0
+        },
+        {
+          "symptom": "yellowing_of_eyes",
+          "importance": 1.0
+        },
+        {
+          "symptom": "muscle_pain",
+          "importance": 1.0
+        },
+        {
+          "symptom": "joint_pain",
+          "importance": 0.95
+        },
+        {
+          "symptom": "yellowish_skin",
+          "importance": 0.95
+        }
+      ]
+    }
+  }
+}

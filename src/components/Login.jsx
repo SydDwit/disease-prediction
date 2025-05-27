@@ -45,7 +45,11 @@ const Login = () => {
         throw new Error(data.detail || 'Login failed');
       }
 
+      // Store user data in localStorage
       localStorage.setItem('username', data.username);
+      localStorage.setItem('userId', data.user_id);
+      localStorage.setItem('fullName', data.full_name);
+      localStorage.setItem('token', data.token);
       navigate('/home');
       
     } catch (err) {
