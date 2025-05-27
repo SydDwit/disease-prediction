@@ -122,3 +122,25 @@ frontend/.nuxt/
 frontend/.vuepress/dist
 frontend/.cache/ 
 training_analysis/
+
+# Additional ignores
+*.zip
+*.rar
+*.tar.gz
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+coverage.xml
+.coverage.*
+.hypothesis/
+.ipynb_checkpoints
+*.sage.py
+celerybeat-schedule
+celerybeat.pid
+.spyderproject
+.spyproject
+.ropeproject
+/site
+.pytype/
+cython_debug/
+poetry.lock
